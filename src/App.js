@@ -10,6 +10,8 @@ import { nodeUIFunctions } from './components/UIFunctions';
 import { nodeProperties } from './components/properties';
 import evaluateLinks from './components/evaluateLinks.js';
 
+import { useMemberstack } from "@memberstack/react";
+
 // Refactor
 //  Sidebar fix
 //  What if member is null
@@ -35,28 +37,34 @@ import evaluateLinks from './components/evaluateLinks.js';
 //  Hide Uncompleted Nodes
 //  https://observablehq.com/@d3/delaunay-find-zoom
 
-function App({data, member}) {
+// Failsafe
+  // Include a failsafe data in case problems in API occur
 
-  let [root, setActiveRoot] = useState(rootOptions(data, 2500))
+function App({data, member}) {
+  // let [root, setActiveRoot] = useState(rootOptions(data, 2500))
+  let [root, setActiveRoot] = useState(null)
   const [windowDimensions, setWindowDimensions] = useState({ 
     height: window.innerHeight,
     width: window.innerWidth
   })
   let lastKnownCamera = {k: 1, x: 0, y: 0}
 
+  const memberstack = useMemberstack();
+  const [trueMember, setTrueMember] = useState(
+      {
+        data: {
+          completedArticlesID: []
+      }
+    }
+  );
+
   const resetCamera = () => {
     lastKnownCamera = {k: 1, x: 0, y: 0}
   }
 
-  // let rawMemberData = {
-  //   "data": {
-  //     "completedID": []
-  //   }
-  // }
-
   let treeProps = {
     root: root,
-    member: member,
+    member: trueMember,
   }
 
   let nodeRef = useRef(
@@ -65,55 +73,117 @@ function App({data, member}) {
       activeTag: null
     }
   )
+  
+  const [trueData, setTrueData] = useState([])
+
+  let Airtable = require('airtable');
+  const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
+  let base = new Airtable({apiKey: apiKey}).base('app7qupBwSPEY7HaZ');
+
+  async function fetchAllRecords(table) {
+    const allRecords = [];
+    let offset = null;
+  
+    do {
+      const options = {
+        pageSize: 100,
+        offset,
+      };
+  
+      // Fetch records with pagination options
+      const response = await table.select({}).all();
+  
+      // Append fetched records to the result array
+      allRecords.push(...response);
+  
+      // Update the offset for the next page
+      offset = response.offset;
+    } while (offset);
+  
+    return allRecords;
+  }
+
+  function filterData(data, filter){
+    if (filter == null) return data;
+    let filteredData = data.filter(obj => {
+        return obj.category === filter;
+      });
+    let rootData = data.filter(obj => {
+        return obj.parentId === ''
+    });
+    return [...filteredData, ...rootData]
+  }
+
+  function clearUI(){
+    searchUIFunctions.hideSearchUI()
+    nodeUIFunctions.hideSidebar()
+    if(nodeRef.current.activeElement!=null) {
+      nodeProperties.neutralState(nodeRef.current, trueMember)
+    }
+    nodeRef.current.activeElement = null
+    nodeRef.current.activeTag = null
+    evaluateLinks(nodeRef.current)
+  }
 
   useEffect(()=>{
-    function filterData(data, filter){
-      if (filter == null) return data;
-      let filteredData = data.filter(obj => {
-          return obj.category === filter;
-        });
-      let rootData = data.filter(obj => {
-          return obj.id === 'root'
+    const processData = async (data) => {
+      let records = []
+      data.forEach(record => {
+        let parentPlaceholder
+        try{
+          parentPlaceholder = record.fields["Course Map: Parent Post"][0]
+        } catch {
+          parentPlaceholder = ""
+        }
+          records.push({
+            id: record.id,
+            name: record.fields["Name"],
+            courseMapName: record.fields["Course Map: Name"],
+            parentId: parentPlaceholder,
+            link: `https://wethestudy.webflow.io/learn/${record.fields["Slug"]}`,
+            order: record.fields["Organization: Sibling Order"],
+            category: record.fields["Organization: Category"],
+            courseSummary: "",
+            relatedLinks: []
+          })
       });
-      return [...filteredData, ...rootData]
+      return records
     }
-    d3.select("#related-links").on("click", (event) => evaluateLinks(nodeRef.current))
-    d3.select('#categorymath')
-      .on('click', ()=>{
-        clearUI()
-        resetCamera()
-        setActiveRoot(rootOptions(filterData(data, "Mathematics"), 1500))
-      })
-    d3.select('#categoryphysics')
-      .on('click', ()=>{
-        clearUI()
-        resetCamera()
-        setActiveRoot(treeProps.root = rootOptions(filterData(data, "Physics"), 1000))
-      })
-    d3.select('#categoryengineering')
-      .on('click', ()=>{
-        clearUI()
-        resetCamera()
-        setActiveRoot(treeProps.root = rootOptions(filterData(data, "Engineering"), 2000))
-      })
-    d3.select('#categoryall')
-      .on('click', ()=>{
-        clearUI()
-        resetCamera()
-        setActiveRoot(treeProps.root = rootOptions(filterData(data), 2500))
-      })
-    d3.select('#clear-button')
-      .on('click', clearUI)
-    function clearUI(){
-      searchUIFunctions.hideSearchUI()
-      nodeUIFunctions.hideSidebar()
-      if(nodeRef.current.activeElement!=null) {
-        nodeProperties.neutralState(nodeRef.current, member)
+
+    // Usage example
+    async function main() {
+      try {
+        // Specify the table name you want to fetch records from
+        const tableName = 'Learn: Articles';
+
+        // Get the table reference
+        const table = base(tableName);
+
+        // Fetch all records from the table
+        const allRecords = await fetchAllRecords(table);
+        // setTrueData(allRecords)
+        // Process the retrieved records
+        let records = await processData(allRecords)
+        
+        // setTrueData(records)
+        setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
+        setTrueData(records)
+      } catch (error) {
+        console.error('Error fetching records:', error);
       }
-      nodeRef.current.activeElement = null
-      nodeRef.current.activeTag = null
-      evaluateLinks(nodeRef.current)
     }
+    
+    main()
+
+    memberstack.getCurrentMember()
+    .then(
+      ({ data: member }) => {
+        if (member != null) setTrueMember(member)
+      })
+    .catch((error) => {
+      console.log(error)
+    })
+
     const handleResize = () => {
       setWindowDimensions({
         height: window.innerHeight,
@@ -122,9 +192,48 @@ function App({data, member}) {
       clearUI()
     }
     window.addEventListener('resize', handleResize)
+  }, [])
+
+  useEffect(()=>{
+    d3.select("#related-links").on("click", (event) => evaluateLinks(nodeRef.current))
+    d3.select('#categorymath')
+      .on('click', ()=>{
+        clearUI()
+        resetCamera()
+        setActiveRoot(rootOptions(filterData(trueData, "Mathematics"), 1500))
+      })
+    d3.select('#categoryphysics')
+      .on('click', ()=>{
+        console.log(true)
+        clearUI()
+        resetCamera()
+        setActiveRoot(treeProps.root = rootOptions(filterData(trueData, "Physics"), 1000))
+      })
+    d3.select('#categoryengineering')
+      .on('click', ()=>{
+        console.log(true)
+        clearUI()
+        resetCamera()
+        setActiveRoot(treeProps.root = rootOptions(filterData(trueData, "Engineering"), 2000))
+      })
+    d3.select('#categoryall')
+      .on('click', ()=>{
+        console.log(true)
+        clearUI()
+        resetCamera()
+        setActiveRoot(treeProps.root = rootOptions(filterData(trueData), 2500))
+      })
+    d3.select('#clear-button')
+      .on('click', clearUI)
   })
 
+  if (!trueMember) {
+    // console.log(trueMember)
+    // return null
+  };
+
   return (
+    root != null ?
     <>
       <RadialTree 
         treeProps={treeProps} 
@@ -148,6 +257,8 @@ function App({data, member}) {
         <FilterBar/>
         <input type="checkbox" id="related-links" className="tree-button"/>
       </div>
+    </> : <>
+        <p>The tree is loading...</p>
     </>
   );
 }

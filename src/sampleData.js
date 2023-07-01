@@ -1,3 +1,5 @@
+// Complete relatedlinks and summary
+
 export default [
     {
         "id": "root",

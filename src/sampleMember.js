@@ -5,7 +5,7 @@ let sampleMember = {
         "city": "XXX",
         "country": "XXX"
       },
-      "completedID": [
+      "completedArticlesID": [
         "root", 
         "physics", 
         "mechanics", 
