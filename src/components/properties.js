@@ -31,7 +31,7 @@ const pathProperties = {
   strokeWidth: 2,
   strokeColor: (d, member)=>{
     let defaultStroke = "#555"
-    let completedList = member.data.json.completedArticlesID
+    let completedList = member.completedArticlesID
     if (completedList.includes(d.source.id) 
         && completedList.includes(d.target.id)
         ) {
@@ -41,7 +41,7 @@ const pathProperties = {
   },
   strokeOpacity: (d, member)=>{
     let defaultOpacity = 0.1
-      let completedList = member.data.json.completedArticlesID
+      let completedList = member.completedArticlesID
       if (completedList.includes(d.source.id) 
           && completedList.includes(d.target.id)
           ) {
@@ -71,7 +71,7 @@ const nodeProperties = {
             color = "lightgrey"
             break
     }
-    member.data.json.completedArticlesID.forEach(element => {
+    member.completedArticlesID.forEach(element => {
         if(element === d.data.id){     
             color = 'teal'
         }
@@ -83,7 +83,7 @@ const nodeProperties = {
   },
   opacity: (d, member) => {
     let opacity = 0.25
-      member.data.json.completedArticlesID.forEach(element => {
+      member.completedArticlesID.forEach(element => {
           if(element === d.data.id){     
               opacity = 1.0
           }
