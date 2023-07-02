@@ -2,13 +2,22 @@ require('dotenv').config();
 const express = require('express');
 const routes = require('./routes');
 const cors = require('cors');
+const serverless= require('serverless-http');
 
 const app = express();
 
 app.use(cors());
-app.use(routes)
+app.use('/.netlify/functions/api', routes)
 
-const port = process.env.PORT || 8000;
+module.exports.handler = serverless(app)
+
+// const port = process.env.PORT || 8000;
+
+// app.listen(port, () => {
+//   console.log(`Server is listening on port ${port}`);
+// });
+
+
 
 // app.get('/api/airtable', (req, res) => {
 //   const API_KEY = process.env.REACT_APP_AIRTABLE_API_KEY;
@@ -37,9 +46,5 @@ const port = process.env.PORT || 8000;
 // app.get('/', (req, res) => {
 //   res.send('Hello, server!');
 // });
-
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
-});
 
 

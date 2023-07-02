@@ -9,6 +9,10 @@ const SECRET_API_KEY = process.env.SECRET_MEMBERSTACK_ID;
 const BASE_ID = 'app7qupBwSPEY7HaZ';
 const TABLE_NAME = 'tbl2LMlJCuEYW5jv5';
 
+router.get('/', (req, res)=>{
+  res.send('App is running...')
+}) 
+
 
 router.get('/api/memberstack', (req, res) => {
     // const memberstackId = `${MEMBERSTACK_API_KEY}`;
