@@ -4,6 +4,7 @@ const cors = require('cors');
 const serverless= require('serverless-http');
 const router = express.Router();
 const axios = require('axios');
+// const bodyParser = require('body-parser');
 
 const API_KEY = process.env.REACT_APP_AIRTABLE_API_KEY;
 const MEMBERSTACK_API_KEY = process.env.MEMBERSTACK_ID;
@@ -11,15 +12,27 @@ const SECRET_API_KEY = process.env.SECRET_MEMBERSTACK_ID;
 const BASE_ID = 'app7qupBwSPEY7HaZ';
 const TABLE_NAME = 'tbl2LMlJCuEYW5jv5';
 
-router.get('/', (req, res)=>{
+router.get('/demo', (req, res)=>{
   res.send('App is running...')
 }) 
 
-router.get('/api/memberstack', (req, res) => {
+router.get('/api/memberstack', async (req, res) => {
     // const memberstackId = `${MEMBERSTACK_API_KEY}`;
     // res.json({ publicKey: memberstackId });
-
     const url = 'https://admin.memberstack.com/members';
+
+    // try{
+    //     const memberstackResponse = axios.get(url, {
+    //         headers: {
+    //           "X-API-KEY": `${SECRET_API_KEY}`
+    //         }
+    //       })
+        
+    //     res.json({ publicKey: MEMBERSTACK_API_KEY });
+    // }catch(error){
+    //     console.error('Error fetching Memberstack ID:', error);
+    //     res.status(500).json({ error: 'Failed to fetch Memberstack ID' });
+    // }
 
     axios.get(url, {
       headers: {
@@ -80,9 +93,19 @@ router.get('/api/airtable', async (req, res) => {
   });
 
 const app = express();
-
 app.use(cors());
-app.use('/.netlify/functions/api', router)
+app.use('/.netlify/functions/server', router)
+
+// app.use(bodyParser.json());
+// app.use('/.netlify/functions/api', router)
+
+// const handler = serverless(app);
+
+// // Export the wrapped handler function
+// module.exports.handler = async (event, context) => {
+//   // Invoke the wrapped handler function
+//   return await handler(event, context);
+// };
 
 module.exports.handler = serverless(app)
 

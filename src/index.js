@@ -5,6 +5,7 @@ import App from './App';
 import sampleData from "./sampleData.js"
 import sampleMember from './sampleMember.js';
 import { MemberstackProvider } from '@memberstack/react';
+import axios from 'axios';
 
 const AppWrapper = () => {
   let [config, setConfig] = useState(null)
@@ -13,10 +14,19 @@ const AppWrapper = () => {
   //   publicKey: "pk_sb_b85f95a50767be6073e1",
   // }
 
+  // const fetchData = async () => {
+  //   const results = await axios.get('/.netlify/functions/server/api/memberstack')
+  //   console.log(results)
+  //   setConfig(data)
+  // }
+
+
   useEffect(()=>{
     const fetchMemberstackData = async () => {
-      fetch('http://localhost:8000/api/memberstack')
-      .then(response => response.json())
+      fetch('/.netlify/functions/server/api/memberstack')
+      .then(response => {
+        return response.json()
+      })
       .then(data => {
         setConfig(data)
       })
@@ -24,6 +34,7 @@ const AppWrapper = () => {
         console.error('Error fetching Memberstack ID:', error);
       });
     }
+    // fetchData()
     fetchMemberstackData()
   }, [])
 
