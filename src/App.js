@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import { nodeUIFunctions } from './components/UIFunctions';
 import { nodeProperties } from './components/properties';
 import evaluateLinks from './components/evaluateLinks.js';
-
+import axios from 'axios';
 import { useMemberstack } from "@memberstack/react";
 
 // Refactor
@@ -126,6 +126,19 @@ function App({data, member}) {
   }
 
   useEffect(()=>{
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:8000/api/airtable');
+        // setData(response.data);
+        let records = await processData(response.data)
+        setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
+        setTrueData(records)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData()
+
     const processData = async (data) => {
       let records = []
       data.forEach(record => {
@@ -173,7 +186,7 @@ function App({data, member}) {
       }
     }
     
-    main()
+    // main()
 
     memberstack.getCurrentMember()
     .then(
