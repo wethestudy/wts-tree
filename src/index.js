@@ -20,7 +20,6 @@ const AppWrapper = () => {
   //   setConfig(data)
   // }
 
-
   useEffect(()=>{
     const fetchMemberstackData = async () => {
       fetch('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/memberstack', {

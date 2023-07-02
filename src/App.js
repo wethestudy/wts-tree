@@ -189,9 +189,11 @@ function App({data, member}) {
     // main()
 
     memberstack.getCurrentMember()
-    .then(
-      ({ data: member }) => {
-        if (member != null) setTrueMember(member)
+    .then(async ({ data: member }) => {
+        if (member != null) {
+          let memberJson = memberstack.getMemberJSON();
+          setTrueMember(memberJson)
+        }
       })
     .catch((error) => {
       console.log(error)
