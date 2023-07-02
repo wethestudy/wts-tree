@@ -188,16 +188,16 @@ function App({data, member}) {
     
     // main()
 
-    memberstack.getCurrentMember()
-    .then(async ({ data: member }) => {
-        if (member != null) {
-          let memberJson = memberstack.getMemberJSON();
-          setTrueMember(memberJson)
-        }
-      })
-    .catch((error) => {
-      console.log(error)
-    })
+    // memberstack.getCurrentMember()
+    // .then(async ({ data: member }) => {
+    //     if (member != null) {
+    //       let memberJson = memberstack.getMemberJSON();
+    //       setTrueMember(memberJson)
+    //     }
+    //   })
+    // .catch((error) => {
+    //   console.log(error)
+    // })
 
     const handleResize = () => {
       setWindowDimensions({
