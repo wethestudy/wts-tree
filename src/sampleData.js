@@ -1,6 +1,6 @@
 // Complete relatedlinks and summary
 
-export default [
+let sampleData = [
     {
         "id": "root",
         "name": "Root",
@@ -2686,3 +2686,5 @@ export default [
         "relatedLinks": []
     }
 ]
+
+export default sampleData

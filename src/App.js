@@ -76,32 +76,32 @@ function App({data, member}) {
   
   const [trueData, setTrueData] = useState([])
 
-  let Airtable = require('airtable');
-  const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
-  let base = new Airtable({apiKey: apiKey}).base('app7qupBwSPEY7HaZ');
+  // let Airtable = require('airtable');
+  // const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
+  // let base = new Airtable({apiKey: apiKey}).base('app7qupBwSPEY7HaZ');
 
-  async function fetchAllRecords(table) {
-    const allRecords = [];
-    let offset = null;
+  // async function fetchAllRecords(table) {
+  //   const allRecords = [];
+  //   let offset = null;
   
-    do {
-      const options = {
-        pageSize: 100,
-        offset,
-      };
+  //   do {
+  //     const options = {
+  //       pageSize: 100,
+  //       offset,
+  //     };
   
-      // Fetch records with pagination options
-      const response = await table.select({}).all();
+  //     // Fetch records with pagination options
+  //     const response = await table.select({}).all();
   
-      // Append fetched records to the result array
-      allRecords.push(...response);
+  //     // Append fetched records to the result array
+  //     allRecords.push(...response);
   
-      // Update the offset for the next page
-      offset = response.offset;
-    } while (offset);
+  //     // Update the offset for the next page
+  //     offset = response.offset;
+  //   } while (offset);
   
-    return allRecords;
-  }
+  //   return allRecords;
+  // }
 
   function filterData(data, filter){
     if (filter == null) return data;
@@ -164,27 +164,27 @@ function App({data, member}) {
     }
 
     // Usage example
-    async function main() {
-      try {
-        // Specify the table name you want to fetch records from
-        const tableName = 'Learn: Articles';
+    // async function main() {
+    //   try {
+    //     // Specify the table name you want to fetch records from
+    //     const tableName = 'Learn: Articles';
 
-        // Get the table reference
-        const table = base(tableName);
+    //     // Get the table reference
+    //     const table = base(tableName);
 
-        // Fetch all records from the table
-        const allRecords = await fetchAllRecords(table);
-        // setTrueData(allRecords)
-        // Process the retrieved records
-        let records = await processData(allRecords)
+    //     // Fetch all records from the table
+    //     const allRecords = await fetchAllRecords(table);
+    //     // setTrueData(allRecords)
+    //     // Process the retrieved records
+    //     let records = await processData(allRecords)
         
-        // setTrueData(records)
-        setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
-        setTrueData(records)
-      } catch (error) {
-        console.error('Error fetching records:', error);
-      }
-    }
+    //     // setTrueData(records)
+    //     setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
+    //     setTrueData(records)
+    //   } catch (error) {
+    //     console.error('Error fetching records:', error);
+    //   }
+    // }
     
     // main()
 

@@ -40,7 +40,7 @@ root.render(
   <AppWrapper/>
 );
 
-{/* <script>
+/* <script>
 document.addEventListener("DOMContentLoaded", async function() {
 	let formwrapper = document.querySelector('#mark-as-watched')
   const memberstack = window.$memberstackDom;
@@ -53,4 +53,4 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   })
 });
-</script> */}
+</script> */

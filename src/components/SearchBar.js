@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-const SearchBar = ({}) => {
+const SearchBar = () => {
     return <>
       <div id="search-field">
         <textarea id="search-textarea" placeholder="Type Something Here!"></textarea>

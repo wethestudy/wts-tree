@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-const FilterBar = ({}) => {
+const FilterBar = () => {
     return <div id="filter-wrapper">
       <button id="categorymath" className="category-button">Mathematics</button>
       <button id="categoryphysics" className="category-button">Physics</button>

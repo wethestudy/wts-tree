@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavigationControls = ({}) => {
+const NavigationControls = () => {
   return <div id="navigation-control">
     <button id="navigation-button-center" className="tree-button">
       <svg viewBox="0 0 100 100">
