@@ -23,7 +23,10 @@ const AppWrapper = () => {
 
   useEffect(()=>{
     const fetchMemberstackData = async () => {
-      fetch('/.netlify/functions/server/api/memberstack')
+      fetch('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/memberstack', {
+        method: 'GET',
+        credentials: 'include',
+      })
       .then(response => {
         return response.json()
       })

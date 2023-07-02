@@ -128,7 +128,7 @@ function App({data, member}) {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const response = await axios.get('/.netlify/functions/server/api/airtable');
+        const response = await axios.get('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/airtable', {withCredentials: true});
         // setData(response.data);
         let records = await processData(response.data)
         setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))

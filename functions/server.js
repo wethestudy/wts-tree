@@ -7,8 +7,8 @@ const axios = require('axios');
 // const bodyParser = require('body-parser');
 
 const API_KEY = process.env.REACT_APP_AIRTABLE_API_KEY;
-const MEMBERSTACK_API_KEY = process.env.MEMBERSTACK_ID;
-const SECRET_API_KEY = process.env.SECRET_MEMBERSTACK_ID;
+const MEMBERSTACK_API_KEY = process.env.REACT_APP_MEMBERSTACK_ID;
+const SECRET_API_KEY = process.env.REACT_APP_SECRET_MEMBERSTACK_ID;
 const BASE_ID = 'app7qupBwSPEY7HaZ';
 const TABLE_NAME = 'tbl2LMlJCuEYW5jv5';
 
@@ -93,7 +93,18 @@ router.get('/api/airtable', async (req, res) => {
   });
 
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: 'https://wethestudy-tree.netlify.app/', // Replace with your allowed origin URL
+  // origin: 'http://localhost:8888',
+  methods: 'GET,POST,PUT,PATCH,DELETE',
+  allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
+
 app.use('/.netlify/functions/server', router)
 
 // app.use(bodyParser.json());
