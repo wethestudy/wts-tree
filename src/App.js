@@ -192,7 +192,7 @@ function App({data, member}) {
           console.log(member)
           let memberJson = await memberstack.getMemberJSON();
           console.log(memberJson)
-          setTrueMember(memberJson.data.json)
+          setTrueMember(memberJson)
         }
       })
     .catch((error) => {
