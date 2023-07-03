@@ -125,7 +125,7 @@ function App({data, member}) {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const response = await axios.get('/.netlify/functions/server/api/airtable', {withCredentials: true});
+        const response = await axios.get('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/airtable', {withCredentials: true});
         let records = await processData(response.data)
         setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
         setTrueData(records)
@@ -199,15 +199,15 @@ function App({data, member}) {
       console.log(error)
     })
 
-    const fetchMemberData = async () => {
-      try {
-        const response = await axios.get('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/get-sample-member', {withCredentials: true});
-        console.log(response.data.data.json)
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchMemberData()
+    // const fetchMemberData = async () => {
+    //   try {
+    //     const response = await axios.get('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/get-sample-member', {withCredentials: true});
+    //     // console.log(response.data.data.json)
+    //   } catch (error) {
+    //     console.error('Error fetching data:', error);
+    //   }
+    // };
+    // fetchMemberData()
 
     const handleResize = () => {
       setWindowDimensions({
