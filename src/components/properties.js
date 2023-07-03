@@ -30,14 +30,13 @@ const circleMarkerProperties = {
 const pathProperties = {
   strokeWidth: 2,
   strokeColor: (d, member)=>{
-    console.log(member)
     let defaultStroke = "#555"
     let completedList = member.data.completedArticlesID
-    if (completedList != []){
-      if (completedList.includes(d.source.id) && completedList.includes(d.target.id)) {
+    if (completedList.includes(d.source.id) 
+        && completedList.includes(d.target.id)
+        ) {
             defaultStroke = "teal"
         }
-    }
     return defaultStroke
   },
   strokeOpacity: (d, member)=>{
@@ -73,13 +72,11 @@ const nodeProperties = {
             color = "lightgrey"
             break
     }
-    if (member.data.completedArticlesID!=[]){
-        member.data.completedArticlesID.forEach(element => {
-          if(element === d.data.id){     
-              color = 'teal'
-          }
-      });
-    }
+    member.data.completedArticlesID.forEach(element => {
+        if(element === d.data.id){     
+            color = 'teal'
+        }
+    });
     return color
   },
   fillHover: () => {
@@ -87,14 +84,12 @@ const nodeProperties = {
   },
   opacity: (d, member) => {
     let opacity = 0.25
-    if (member.data.completedArticlesID!=[]){
       member.data.completedArticlesID.forEach(element => {
           if(element === d.data.id){     
               opacity = 1.0
           }
       });
-    }
-    return opacity
+      return opacity
   },
   opacityHover: ()=>{
     return 1

@@ -50,9 +50,9 @@ function App({data, member}) {
 
   const memberstack = useMemberstack();
   const [trueMember, setTrueMember] = useState(
-      {
+      {data: {
         completedArticlesID: []
-      }
+      }}
   );
 
   const resetCamera = () => {
@@ -72,33 +72,6 @@ function App({data, member}) {
   )
   
   const [trueData, setTrueData] = useState([])
-
-  // let Airtable = require('airtable');
-  // const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
-  // let base = new Airtable({apiKey: apiKey}).base('app7qupBwSPEY7HaZ');
-
-  // async function fetchAllRecords(table) {
-  //   const allRecords = [];
-  //   let offset = null;
-  
-  //   do {
-  //     const options = {
-  //       pageSize: 100,
-  //       offset,
-  //     };
-  
-  //     // Fetch records with pagination options
-  //     const response = await table.select({}).all();
-  
-  //     // Append fetched records to the result array
-  //     allRecords.push(...response);
-  
-  //     // Update the offset for the next page
-  //     offset = response.offset;
-  //   } while (offset);
-  
-  //   return allRecords;
-  // }
 
   function filterData(data, filter){
     if (filter == null) return data;
@@ -125,7 +98,7 @@ function App({data, member}) {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/airtable', {withCredentials: true});
+        const response = await axios.get('/.netlify/functions/server/api/airtable', {withCredentials: true});
         let records = await processData(response.data)
         setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
         setTrueData(records)
@@ -159,48 +132,29 @@ function App({data, member}) {
       return records
     }
 
-    // Usage example
-    // async function main() {
-    //   try {
-    //     // Specify the table name you want to fetch records from
-    //     const tableName = 'Learn: Articles';
-
-    //     // Get the table reference
-    //     const table = base(tableName);
-
-    //     // Fetch all records from the table
-    //     const allRecords = await fetchAllRecords(table);
-    //     // setTrueData(allRecords)
-    //     // Process the retrieved records
-    //     let records = await processData(allRecords)
-        
-    //     // setTrueData(records)
-    //     setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
-    //     setTrueData(records)
-    //   } catch (error) {
-    //     console.error('Error fetching records:', error);
-    //   }
-    // }
-    
-    // main()
-
     // Edithc-28
 
     const getMember = async () => {
-      try{
+      try {
+        // await memberstack.loginMemberEmailPassword({
+        //   email: "xtiandirige@gmail.com",
+        //   password: "Ethereal_7377"
+        // })
+        // await memberstack.logout()
         await memberstack.getCurrentMember()
         .then(async ({ data: member }) => {
             if (member) {
               let memberJson = await memberstack.getMemberJSON();
-              // make sure that memberstack gets the data
               setTrueMember(memberJson)
             }
           })
         .catch((error) => {
-          console.log(error)
+          setTrueMember({data: {
+            completedArticlesID: []
+          }})
         })
       } catch (error) {
-        console.log(error)
+        // handle error here
       }
     }
     getMember()
@@ -303,3 +257,55 @@ function rootOptions(data, radius) {
 }
 
 export default App;
+
+// Usage example
+// async function main() {
+//   try {
+//     // Specify the table name you want to fetch records from
+//     const tableName = 'Learn: Articles';
+
+//     // Get the table reference
+//     const table = base(tableName);
+
+//     // Fetch all records from the table
+//     const allRecords = await fetchAllRecords(table);
+//     // setTrueData(allRecords)
+//     // Process the retrieved records
+//     let records = await processData(allRecords)
+    
+//     // setTrueData(records)
+//     setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
+//     setTrueData(records)
+//   } catch (error) {
+//     console.error('Error fetching records:', error);
+//   }
+// }
+
+// main()
+
+// let Airtable = require('airtable');
+// const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
+// let base = new Airtable({apiKey: apiKey}).base('app7qupBwSPEY7HaZ');
+
+// async function fetchAllRecords(table) {
+//   const allRecords = [];
+//   let offset = null;
+
+//   do {
+//     const options = {
+//       pageSize: 100,
+//       offset,
+//     };
+
+//     // Fetch records with pagination options
+//     const response = await table.select({}).all();
+
+//     // Append fetched records to the result array
+//     allRecords.push(...response);
+
+//     // Update the offset for the next page
+//     offset = response.offset;
+//   } while (offset);
+
+//   return allRecords;
+// }
