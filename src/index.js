@@ -15,6 +15,7 @@ const AppWrapper = () => {
   // https://wethestudy-tree.netlify.app
   
   useEffect(()=>{
+    // Hide public key
     const fetchMemberstackData = async () => {
       fetch('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/memberstack', {
         method: 'GET',

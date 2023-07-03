@@ -186,18 +186,24 @@ function App({data, member}) {
 
     // Edithc-28
 
-    memberstack.getCurrentMember()
-    .then(async ({ data: member }) => {
-        if (member) {
-          console.log(member)
-          let memberJson = await memberstack.getMemberJSON();
-          console.log(memberJson)
-          setTrueMember(memberJson)
-        }
-      })
-    .catch((error) => {
-      console.log(error)
-    })
+    const getMember = async () => {
+      try{
+        await memberstack.getCurrentMember()
+        .then(async ({ data: member }) => {
+            if (member) {
+              let memberJson = await memberstack.getMemberJSON();
+              // make sure that memberstack gets the data
+              setTrueMember(memberJson)
+            }
+          })
+        .catch((error) => {
+          console.log(error)
+        })
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    getMember()
 
     // const fetchMemberData = async () => {
     //   try {
