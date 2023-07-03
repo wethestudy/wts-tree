@@ -5,24 +5,18 @@ import App from './App';
 import sampleData from "./sampleData.js"
 import sampleMember from './sampleMember.js';
 import { MemberstackProvider } from '@memberstack/react';
-import axios from 'axios';
+
+//Implement fillColor for active member (try DEPLOY)
+//Implement development and production variables
 
 const AppWrapper = () => {
   let [config, setConfig] = useState(null)
 
-  // let config = {
-  //   publicKey: "pk_sb_b85f95a50767be6073e1",
-  // }
-
-  // const fetchData = async () => {
-  //   const results = await axios.get('/.netlify/functions/server/api/memberstack')
-  //   console.log(results)
-  //   setConfig(data)
-  // }
-
+  // https://wethestudy-tree.netlify.app
+  
   useEffect(()=>{
     const fetchMemberstackData = async () => {
-      fetch('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/memberstack', {
+      fetch('/.netlify/functions/server/api/memberstack', {
         method: 'GET',
         credentials: 'include',
       })
@@ -47,23 +41,7 @@ const AppWrapper = () => {
   );
 }
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AppWrapper/>
 );
-
-/* <script>
-document.addEventListener("DOMContentLoaded", async function() {
-	let formwrapper = document.querySelector('#mark-as-watched')
-  const memberstack = window.$memberstackDom;
-
-  memberstack.getCurrentMember().then(async ({ data: member }) => {
-    if(member) {
-      let memberJson = await memberstack.getMemberJSON();
-      console.log(member)
-      console.log(memberJson)
-    }
-  })
-});
-</script> */

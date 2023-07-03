@@ -6,20 +6,38 @@ const router = express.Router();
 const axios = require('axios');
 // const bodyParser = require('body-parser');
 
-const API_KEY = process.env.REACT_APP_AIRTABLE_API_KEY;
-const MEMBERSTACK_API_KEY = process.env.REACT_APP_MEMBERSTACK_ID;
-const SECRET_API_KEY = process.env.REACT_APP_SECRET_MEMBERSTACK_ID;
+const AIRTABLE_API_KEY = process.env.REACT_APP_AIRTABLE_API_KEY;
+const MEMBERSTACK_PUBLIC_API_KEY = process.env.REACT_APP_MEMBERSTACK_ID;
+const MEMBERSTACK_SECRET_API_KEY = process.env.REACT_APP_SECRET_MEMBERSTACK_ID;
 const BASE_ID = 'app7qupBwSPEY7HaZ';
 const TABLE_NAME = 'tbl2LMlJCuEYW5jv5';
+const memberstackURL = 'https://admin.memberstack.com/members';
 
 router.get('/demo', (req, res)=>{
   res.send('App is running...')
 }) 
 
+router.get('/api/get-sample-member', async(req, res)=>{
+  axios.get(`${memberstackURL}/xtiandirige%40gmail.com`, {
+    headers: {
+      "X-API-KEY": `${MEMBERSTACK_SECRET_API_KEY}`
+    }
+  })
+    .then(response => {
+      // console.log(response)
+      // const memberId = response.data.id;
+      res.json(response.data);
+    })
+    .catch(error => {
+      console.error('Error fetching Memberstack ID:', error);
+      res.status(500).json({ error: 'Failed to fetch Memberstack ID' });
+    });
+});
+
 router.get('/api/memberstack', async (req, res) => {
     // const memberstackId = `${MEMBERSTACK_API_KEY}`;
     // res.json({ publicKey: memberstackId });
-    const url = 'https://admin.memberstack.com/members';
+    // const url = 'https://admin.memberstack.com/members';
 
     // try{
     //     const memberstackResponse = axios.get(url, {
@@ -34,15 +52,15 @@ router.get('/api/memberstack', async (req, res) => {
     //     res.status(500).json({ error: 'Failed to fetch Memberstack ID' });
     // }
 
-    axios.get(url, {
+    axios.get(memberstackURL, {
       headers: {
-        "X-API-KEY": `${SECRET_API_KEY}`
+        "X-API-KEY": `${MEMBERSTACK_SECRET_API_KEY}`
       }
     })
       .then(response => {
         // console.log(response)
         // const memberId = response.data.id;
-        res.json({ publicKey: MEMBERSTACK_API_KEY });
+        res.json({ publicKey: MEMBERSTACK_PUBLIC_API_KEY });
       })
       .catch(error => {
         console.error('Error fetching Memberstack ID:', error);
@@ -64,7 +82,7 @@ router.get('/api/airtable', async (req, res) => {
           `https://api.airtable.com/v0/${BASE_ID}/${TABLE_NAME}`,
           {
             headers: {
-              Authorization: `Bearer ${API_KEY}`,
+              Authorization: `Bearer ${AIRTABLE_API_KEY}`,
             },
             params: {
               pageSize: 100, // Maximum number of records per request (max: 100)
@@ -95,8 +113,8 @@ router.get('/api/airtable', async (req, res) => {
 const app = express();
 
 const corsOptions = {
-  origin: 'https://wethestudy.webflow.io', // Replace with your allowed origin URL
-  // origin: 'http://localhost:8888',
+  // origin: 'https://wethestudy.webflow.io', // Replace with your allowed origin URL
+  origin: 'http://localhost:8888',
   methods: 'GET,POST,PUT,PATCH,DELETE',
   allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept',
   credentials: true,

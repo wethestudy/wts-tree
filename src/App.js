@@ -12,14 +12,14 @@ import evaluateLinks from './components/evaluateLinks.js';
 import axios from 'axios';
 import { useMemberstack } from "@memberstack/react";
 
-// Refactor
+// Design
+//  Refactor
 //  Sidebar fix
 //  What if member is null
 //  UI elements adjust when resizing (responsive design)
+//  Loading bar
 
 // Active and neutral marker
-
-// Integrate to Webflow
 
 // Future Implementation
 // Views
@@ -41,7 +41,6 @@ import { useMemberstack } from "@memberstack/react";
   // Include a failsafe data in case problems in API occur
 
 function App({data, member}) {
-  // let [root, setActiveRoot] = useState(rootOptions(data, 2500))
   let [root, setActiveRoot] = useState(null)
   const [windowDimensions, setWindowDimensions] = useState({ 
     height: window.innerHeight,
@@ -52,10 +51,8 @@ function App({data, member}) {
   const memberstack = useMemberstack();
   const [trueMember, setTrueMember] = useState(
       {
-        data: {
-          completedArticlesID: []
+        completedArticlesID: []
       }
-    }
   );
 
   const resetCamera = () => {
@@ -128,8 +125,7 @@ function App({data, member}) {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/airtable', {withCredentials: true});
-        // setData(response.data);
+        const response = await axios.get('/.netlify/functions/server/api/airtable', {withCredentials: true});
         let records = await processData(response.data)
         setActiveRoot(treeProps.root = rootOptions(filterData(records), 2500))
         setTrueData(records)
@@ -188,16 +184,30 @@ function App({data, member}) {
     
     // main()
 
-    // memberstack.getCurrentMember()
-    // .then(async ({ data: member }) => {
-    //     if (member != null) {
-    //       let memberJson = memberstack.getMemberJSON();
-    //       setTrueMember(memberJson)
-    //     }
-    //   })
-    // .catch((error) => {
-    //   console.log(error)
-    // })
+    // Edithc-28
+
+    memberstack.getCurrentMember()
+    .then(async ({ data: member }) => {
+        if (member) {
+          console.log(member)
+          let memberJson = await memberstack.getMemberJSON();
+          console.log(memberJson)
+          setTrueMember(memberJson.data.json)
+        }
+      })
+    .catch((error) => {
+      console.log(error)
+    })
+
+    const fetchMemberData = async () => {
+      try {
+        const response = await axios.get('/.netlify/functions/server/api/get-sample-member', {withCredentials: true});
+        console.log(response.data.data.json)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchMemberData()
 
     const handleResize = () => {
       setWindowDimensions({
