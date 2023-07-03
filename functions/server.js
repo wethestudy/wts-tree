@@ -113,8 +113,8 @@ router.get('/api/airtable', async (req, res) => {
 const app = express();
 
 const corsOptions = {
-  // origin: 'https://wethestudy.webflow.io', // Replace with your allowed origin URL
-  origin: 'http://localhost:8888',
+  origin: 'https://wethestudy.webflow.io', // Replace with your allowed origin URL
+  // origin: 'http://localhost:8888',
   methods: 'GET,POST,PUT,PATCH,DELETE',
   allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept',
   credentials: true,

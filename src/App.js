@@ -201,7 +201,7 @@ function App({data, member}) {
 
     const fetchMemberData = async () => {
       try {
-        const response = await axios.get('/.netlify/functions/server/api/get-sample-member', {withCredentials: true});
+        const response = await axios.get('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/get-sample-member', {withCredentials: true});
         console.log(response.data.data.json)
       } catch (error) {
         console.error('Error fetching data:', error);
