@@ -1,0 +1,51 @@
+export const parameters = {
+    treeProperties: {
+        defaultTreeRadius: 2500,
+        mathRadiusFactor: 0.4,
+        physicsRadiusFactor: 0.4,
+        engineeringRadiusFactor: 0.8,
+    },
+    nodeProperties: {
+        r: 15,
+        halo: "#fff",
+        haloWidth: 3,
+        textOffset: 6,
+        defaultColor: "lightgrey",
+        defaultOpacity: 0.25,
+        activeOpacity: 1,
+        completedColor: 'teal',
+        completedOpacity: 1,
+    },
+    pathProperties: {
+        strokeWidth: 2,
+        defaultColor: "lightgrey", 
+        defaultOpacity: 0.5,
+        completedColor: 'teal',
+        completedOpacity: 1,
+    },
+    connectionProperties: {
+        strokeWidth: 2,
+        dasharray: "20, 5",
+        defaultColor: "lightgrey",
+        defaultOpacity: 0.5,
+    },
+    zoomProperties: {
+        radius: 3000,
+        minScale: 0.4,
+        maxScale: 4,
+        radiusFactor: 1.5,
+        centerOffsetX: 3.75,
+        centerOffsetY: 7
+    },
+    markerProperties: {
+        refX: '5',
+        refY: '5',
+        neutralFill: "black",
+        markerWidth: '10',
+        markerHeight: '10',
+        cx: '5',
+        cy: '5',
+        r: '3',
+        stroke: 'none',
+    },
+}

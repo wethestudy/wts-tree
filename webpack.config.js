@@ -40,5 +40,10 @@ module.exports = {
    static: {
      directory: path.join(__dirname, 'dist')
    }
- }
+ },
+ performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  }
 };

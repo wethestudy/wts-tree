@@ -1,48 +1,21 @@
-import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import './assets/fonts/Heebo/Heebo-VariableFont_wght.ttf';
 import './index.css';
-import App from './App';
-import sampleData from "./sampleData.js"
-import sampleMember from './sampleMember.js';
 import { MemberstackProvider } from '@memberstack/react';
+import ErrorBoundary from './components/alert/Error.js';
+import Tree from './Tree.js';
 
-//Implement fillColor for active member (try DEPLOY)
-//Implement development and production variables
-
-const AppWrapper = () => {
-  let [config, setConfig] = useState(null)
-
-  // https://wethestudy-tree.netlify.app
-  
-  useEffect(()=>{
-    // Hide public key
-    const fetchMemberstackData = async () => {
-      fetch('https://wethestudy-tree.netlify.app/.netlify/functions/server/api/memberstack', {
-        method: 'GET',
-        credentials: 'include',
-      })
-      .then(response => {
-        return response.json()
-      })
-      .then(data => {
-        setConfig(data)
-      })
-      .catch(error => {
-        console.error('Error fetching Memberstack ID:', error);
-      });
-    }
-    // fetchData()
-    fetchMemberstackData()
-  }, [])
-
+const App = () => {
   return(
-    config != null ? <MemberstackProvider config={config}>
-      <App data={sampleData} member={sampleMember}/>
-    </MemberstackProvider> : <p>Getting member...</p>
+    <ErrorBoundary>
+      <MemberstackProvider config={{"publicKey":"pk_sb_b85f95a50767be6073e1"}}>
+        <Tree/>
+      </MemberstackProvider>
+    </ErrorBoundary>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <AppWrapper/>
+    <App/>
 );
