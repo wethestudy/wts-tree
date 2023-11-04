@@ -78,7 +78,7 @@ body {
   pointer-events: none;
 }
 .input-wrapper::after {
-  background: url('./assets/icons/fi-sr-search.svg') no-repeat center;
+  background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-search.svg') no-repeat center;
   background-size: contain;
   filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(96%) contrast(89%);
   width: 20px;
@@ -310,7 +310,7 @@ body {
   pointer-events: none;
 }
 .select-wrapper::after {
-  background: url('./assets/icons/fi-sr-angle-circle-down.svg') no-repeat center;
+  background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-angle-circle-down.svg') no-repeat center;
   background-size: contain;
   filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(96%) contrast(89%);
   width: 20px;
@@ -354,12 +354,13 @@ input:where([type="checkbox"], [type="radio"]):disabled{
   background : #d7d3d0;
 }
 input[type="checkbox"]:checked{
-  background-image : url('./assets/icons/checkbox.svg');
-  /* filter: invert(67%) sepia(37%) saturate(378%) hue-rotate(3deg) brightness(88%) contrast(88%); */
+  background-image : url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/checkbox.svg');
 }
 input[type="radio"]:checked{
-  background-image : url('./assets/icons/radio.svg');
-  /* filter: invert(67%) sepia(37%) saturate(378%) hue-rotate(3deg) brightness(88%) contrast(88%); */
+  background-image : url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/radio.svg');
+}
+label{
+  font-weight: 400;
 }
 
 /* Sidebar - Resources */
@@ -457,7 +458,7 @@ input[type="radio"]:checked{
   pointer-events: none;
 }
 .zoomin-wrapper::after {
-  background: url('./assets/icons/fi-sr-add.svg') no-repeat center;
+  background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-add.svg') no-repeat center;
   background-size: contain;
   width: 1.5rem;
   height: 1.5rem;
@@ -497,7 +498,7 @@ input[type="radio"]:checked{
   pointer-events: none;
 }
 .zoomout-wrapper::after {
-  background: url('./assets/icons/fi-sr-minus-circle.svg') no-repeat center;
+  background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-minus-circle.svg') no-repeat center;
   background-size: contain;
   width: 1.5rem;
   height: 1.5rem;
@@ -537,7 +538,7 @@ input[type="radio"]:checked{
   pointer-events: none;
 }
 .center-wrapper::after {
-  background: url('./assets/icons/fi-sr-location-crosshairs.svg') no-repeat center;
+  background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-location-crosshairs.svg') no-repeat center;
   background-size: contain;
   width: 1.5rem;
   height: 1.5rem;
@@ -645,7 +646,7 @@ input[type="radio"]:checked{
     pointer-events: none;
   }
   .mobile-clear-wrapper::after {
-    background: url('./assets/icons/fi-sr-cross-circle.svg') no-repeat center;
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-cross-circle.svg') no-repeat center;
     background-size: contain;
     filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
     width: 1.25rem;
@@ -689,7 +690,7 @@ input[type="radio"]:checked{
     pointer-events: none;
   }
   .mobile-settings-wrapper::after {
-    background: url('./assets/icons/fi-sr-settings.svg') no-repeat center;
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-settings.svg') no-repeat center;
     background-size: contain;
     width: 1.25rem;
     height: 1.25rem;
@@ -763,7 +764,7 @@ input[type="radio"]:checked{
     pointer-events: none;
   }
   .mobile-reveal-wrapper::after {
-    background: url('./assets/icons/fi-sr-angle-circle-up.svg') no-repeat center;
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-angle-circle-up.svg') no-repeat center;
     background-size: contain;
     width: 1.25rem;
     height: 1.25rem;
@@ -810,7 +811,7 @@ input[type="radio"]:checked{
     pointer-events: none;
   }
   .mobile-hide-wrapper::after {
-    background: url('./assets/icons/fi-sr-angle-circle-down.svg') no-repeat center;
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-angle-circle-down.svg') no-repeat center;
     background-size: contain;
     width: 1.25rem;
     height: 1.25rem;
@@ -919,7 +920,7 @@ input[type="radio"]:checked{
     pointer-events: none;
   }
   .mobile-exit-wrapper::after {
-    background: url('./assets/icons/fi-sr-cross-circle.svg') no-repeat center;
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-cross-circle.svg') no-repeat center;
     background-size: contain;
     width: 1.25rem;
     height: 1.25rem;
