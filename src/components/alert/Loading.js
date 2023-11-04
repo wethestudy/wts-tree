@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import animationData from '../../assets/lotties/Animation - 1695477922966.json'

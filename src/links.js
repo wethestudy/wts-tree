@@ -10,6 +10,7 @@ const links = {
     privacyLink: `${url}/privacy-policy`,
     termsLink: `${url}/terms-and-condition`,
     resourcesLink: `${url}/resources/`,
-    copyrightYear: `2023`
+    copyrightYear: `2023`,
+    appVersion: `1.0.2`
 }
 export {links, url}

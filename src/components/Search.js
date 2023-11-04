@@ -1,3 +1,5 @@
+import React from 'react';
+
 export function Search() {
   return <div id="search-wrapper">
     <div id="results">

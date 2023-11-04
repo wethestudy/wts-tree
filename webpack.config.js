@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
  mode: 'production',
@@ -8,7 +9,12 @@ module.exports = {
      {
        test: /\.(js|jsx)$/,
        exclude: /node_modules/,
-       use: ['babel-loader'],
+       use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
      },
      {
        test: /\.css$/,
@@ -17,16 +23,10 @@ module.exports = {
      {
        test: /\.(pdf|jpg|png|gif|svg|ico)$/,
        type: 'asset/resource',
-       use: [
-         {
-           loader: 'url-loader'
-         },
-       ]
      },
      {  
        test: /\.(woff|woff2|eot|ttf|otf)$/,
        type: 'asset/resource',
-       loader: "file-loader"
      }
    ]
  },
@@ -47,5 +47,10 @@ module.exports = {
     hints: false,
     maxEntrypointSize: 512000,
     maxAssetSize: 512000
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),
+  ],
 };

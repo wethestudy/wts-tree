@@ -1,3 +1,5 @@
+import React from 'react';
+
 function TreeSettings() {
     return <div className="sidebar-settings">
       <div className="settings-title">Settings</div>

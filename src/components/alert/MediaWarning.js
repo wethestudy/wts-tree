@@ -1,3 +1,5 @@
+import React from 'react';
+
 export function MediaWarning() {
   return <div className="media-warning">
     <div className="media-warning-wrapper">

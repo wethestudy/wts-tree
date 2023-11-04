@@ -8,6 +8,7 @@ function TreeFooter() {
         <a href={`${links["privacyLink"]}`}>Privacy</a>
       </div>
       <p>©{links["copyrightYear"]} WeTheStudy. All right reserved.</p>
+      <p>Version {links["appVersion"]}</p>
     </div>;
   }
 

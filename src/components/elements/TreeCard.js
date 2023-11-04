@@ -1,3 +1,5 @@
+import React from 'react';
+
 function TreeCard() {
     return <div className="sidebar-card" id="sidebar-card">
       <div className="card-scroll">

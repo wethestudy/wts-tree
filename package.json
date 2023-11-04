@@ -30,6 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "webpack-build": "webpack",
+    "webpack-start": "webpack serve --open",
     "netlify-build": "netlify deploy --prod"
   },
   "engines": {
@@ -66,7 +67,9 @@
     "@babel/runtime": "^7.22.5",
     "babel-loader": "^9.1.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.88.1",

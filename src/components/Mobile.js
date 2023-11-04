@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import React from 'react';
 import { useEffect } from 'react';
 import SearchInput from "./elements/SearchInput";
 import TreeCard from "./elements/TreeCard";

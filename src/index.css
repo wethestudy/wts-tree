@@ -660,10 +660,6 @@ input[type="radio"]:checked{
   .mobile-header-right{
     justify-self: end;
   }
-  .mobile-settings{
-    position: fixed;
-    top: 10rem;
-  }
   .mobile-settings-wrapper {
     position: relative;
     height: 2.5rem;
@@ -861,11 +857,11 @@ input[type="radio"]:checked{
   .mobile-settings{
     visibility: hidden;
     position: absolute;
-    top: 2rem;
+    top: 10rem;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 75%;
-    height: 80%;
+    height: 60%;
     overflow: scroll;
     background-color: white;
     padding: 2rem;
