@@ -10,8 +10,7 @@ export const MobileUI = {
         d3.select('#mobile-settings-overlay').style('visibility', 'hidden')
     },
     revealModal: ()=>{
-        d3.select('#sidebar-card')
-            .transition()
+        d3.select('.mobile-modal #sidebar-card')
             .style('bottom', '32rem')
         d3.select('#reveal-button')
             .style('visibility', 'hidden')

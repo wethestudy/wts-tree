@@ -29,7 +29,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 32.5rem;
+  width: 30rem;
   height: 100%;
   overflow: auto;
 }
@@ -659,6 +659,10 @@ input[type="radio"]:checked{
   }
   .mobile-header-right{
     justify-self: end;
+  }
+  .mobile-settings{
+    position: fixed;
+    top: 10rem;
   }
   .mobile-settings-wrapper {
     position: relative;

@@ -16,6 +16,7 @@ module.exports = {
      },
      {
        test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+       type: 'asset/resource',
        use: [
          {
            loader: 'url-loader'
@@ -24,6 +25,7 @@ module.exports = {
      },
      {  
        test: /\.(woff|woff2|eot|ttf|otf)$/,
+       type: 'asset/resource',
        loader: "file-loader"
      }
    ]
