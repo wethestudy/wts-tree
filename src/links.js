@@ -11,6 +11,6 @@ const links = {
     termsLink: `${url}/terms-and-condition`,
     resourcesLink: `${url}/resources/`,
     copyrightYear: `2023`,
-    appVersion: `1.0.2`
+    appVersion: `1.0.3`
 }
 export {links, url}
