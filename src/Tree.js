@@ -118,6 +118,14 @@ function Tree() {
       return
     }
   }
+  const receiveEvent = async () => {
+    const rootElement = document.getElementById('root');
+    rootElement.addEventListener('memberData', (event) => {
+      console.log('Successfully listened to event!')
+      console.log(event.detail)
+      memberJson = event.detail;
+    });
+  }
   const setConnectionState = () => {
     treeState.connections = stateUtilities.constructConnections(treeState.root.descendants())
     setConnections(treeState.connections)
@@ -148,8 +156,8 @@ function Tree() {
   })
 
   const asyncMember = async () => {
-    if(!useTestMember && activateMemberstack) await memberstack.logout()
-    if(activateMemberstack) await setMemberState() 
+    // if(!useTestMember && activateMemberstack) await memberstack.logout()
+    if(activateMemberstack) await receiveEvent() 
     if(useTestMember) await setTestMember()
     showLoadingScreen ? treeState.member = null : treeState.member = memberJson
     setMember(treeState.member)
