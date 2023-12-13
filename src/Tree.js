@@ -16,21 +16,14 @@ import { RadialTreeUI } from "./components/ui/RadialTreeUI.js";
 import { Search } from "./components/Search.js";
 import { searchUtilities } from "./components/utilities/searchUtilities.js";
 import { MediaWarning } from "./components/alert/MediaWarning.js";
-import { showLoadingScreen } from "./devSettings.js";
+import { showLoadingScreen, activateMemberstack, useTestMember, testEmail, testPassword } from "./devSettings.js";
 
 function Tree() {
   let records = treeUtilities.processJSON(database)
   let [root, setRoot] = useState(null)
   let [member, setMember] = useState(null);
   let memberJson =  {data: {
-    completedArticlesID: [
-      "recnIlyWU7T5WrLn5",
-      "recBnUfj7qa7V0vbo",
-      "recOio904lvegA5Ls",
-      "recwRJDvFSildKAs9",
-      "recxvySqJ68aNUY2C",
-      "reczOBPN0sO5ROzq6",
-    ]
+    completedArticlesID: []
   }}
   let activeNode = useRef(
     {
@@ -84,13 +77,37 @@ function Tree() {
     setRoot(treeState.root)
   }
   const memberstack = useMemberstack();
+  const setTestMember = async () => {
+    console.log('Get test member')
+    try {
+      await memberstack.loginMemberEmailPassword({
+        email: testEmail,
+        password: testPassword
+      })
+      .then(async ({ data: member }) => {
+          if (member !== null) {
+            memberJson = await memberstack.getMemberJSON();
+          } else {
+            return
+          }
+        })
+      .catch((error) => {
+        return
+      })
+    } catch (error) {
+      return
+    }
+  }
   const setMemberState = async () => {
+    console.log('Get member')
     try {
       await memberstack.getCurrentMember()
       .then(async ({ data: member }) => {
           if (member !== null) {
             memberJson = await memberstack.getMemberJSON();
+            console.log(memberJson)
           } else {
+            console.log('Failed to get JSON')
             return
           }
         })
@@ -130,10 +147,17 @@ function Tree() {
       .on('click', ()=>{searchUtilities.handleSearch(treeState.root.descendants(), treeState.member.data.completedArticlesID, treeState.activeNode.current, treeState.cameraPosition)})
   })
 
+  const asyncMember = async () => {
+    if(!useTestMember && activateMemberstack) await memberstack.logout()
+    if(activateMemberstack) await setMemberState() 
+    if(useTestMember) await setTestMember()
+    showLoadingScreen ? treeState.member = null : treeState.member = memberJson
+    setMember(treeState.member)
+  }
+
   useEffect(()=>{
     setTreeState()
-    setMemberState(memberJson)
-    setMember(showLoadingScreen ? treeState.member = null : treeState.member = memberJson)
+    asyncMember()
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])

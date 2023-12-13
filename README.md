@@ -29,6 +29,7 @@ Version 1.0 - Improvements to UI/UX
 - SEARCH: Display only 30 items; any excess item - use page numbering
 - UI: Light/dark mode toggle
 - CODE: Automatic generation of colors for category and topic to accommodate future increase
+- CODE: Failsafes for articles
 - UX: "How-to" screens
 
 Version 2.0
