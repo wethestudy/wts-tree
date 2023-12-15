@@ -1,9 +1,9 @@
-import { isDevelopment } from './devSettings.js'
+import { useDevelopmentURLs } from './devSettings.js'
 
 const developmentURL = "https://wethestudy.webflow.io"
 const productionURL = "https://wethestudy.com"
-const netlifyURL = "https://wethestudy-tree.netlify.app"
-const url = isDevelopment ? developmentURL : productionURL
+// const netlifyURL = "https://wethestudy-tree.netlify.app"
+const url = useDevelopmentURLs ? developmentURL : productionURL
 const links = {
     treeLink: `${url}/tree`,
     indexLink: `${url}/index`,

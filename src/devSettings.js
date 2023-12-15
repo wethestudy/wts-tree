@@ -1,14 +1,10 @@
-const isDevelopment = true;
+const useDevelopmentURLs = true;
 const showLoadingScreen = false;
-
-const activateMemberstack = true;
 const useTestMember = false;
-const testEmail = 'johndoe@email.com'
-const testPassword = 'fakepassword'
-// Memberstack
-// TT - Test member will prevail
-// TF - DEFAULT (for production)
-// FT - will test App using Test member
-// FF - will not use Memberstack features
+const testEmail = 'xtiandirige@gmail.com'
+const testPassword = 'Ethereal_7377!'
 
-export {isDevelopment, showLoadingScreen, activateMemberstack, useTestMember, testEmail, testPassword}
+// By default, React is listening to dispatch from Webflow through its useEffect
+// To test dispatch, paste script from testDispatch.js to index.html
+
+export {useDevelopmentURLs, showLoadingScreen, useTestMember, testEmail, testPassword}

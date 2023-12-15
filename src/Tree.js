@@ -16,12 +16,13 @@ import { RadialTreeUI } from "./components/ui/RadialTreeUI.js";
 import { Search } from "./components/Search.js";
 import { searchUtilities } from "./components/utilities/searchUtilities.js";
 import { MediaWarning } from "./components/alert/MediaWarning.js";
-import { showLoadingScreen, activateMemberstack, useTestMember, testEmail, testPassword } from "./devSettings.js";
+import { showLoadingScreen, useTestMember, testEmail, testPassword } from "./devSettings.js";
 
 function Tree() {
   let records = treeUtilities.processJSON(database)
   let [root, setRoot] = useState(null)
   let [member, setMember] = useState(null);
+  const memberstack = useMemberstack();
   let memberJson =  {data: {
     completedArticlesID: []
   }}
@@ -45,134 +46,8 @@ function Tree() {
     height: window.innerHeight,
   })
   console.log(windowSize)
-  const debounce = (fn, ms) => {
-    let timer
-    return _ => {
-      clearTimeout(timer)
-      timer = setTimeout(_ => {
-        timer = null
-        fn.apply(this, arguments)
-      }, ms)
-    };
-  }
-  const handleResize = () => {
-    debounce(
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight
-      }), 1000)
-    SidebarUI.clearUI()
-  }
-
-  const setRootState = () => {
-    let category
-    try {
-      category = d3.select("#drop-field").node().value;
-    } catch (error) {
-      category = "All"
-    }
-    let treeRadius = treeUtilities.getTreeRadius(category)
-    let filterRecords = treeUtilities.filterRecords(records, category)
-    treeState.root = treeUtilities.processRoot(filterRecords, treeRadius)
-    setRoot(treeState.root)
-  }
-  const memberstack = useMemberstack();
-  const setTestMember = async () => {
-    console.log('Get test member')
-    try {
-      await memberstack.loginMemberEmailPassword({
-        email: testEmail,
-        password: testPassword
-      })
-      .then(async ({ data: member }) => {
-          if (member !== null) {
-            memberJson = await memberstack.getMemberJSON();
-          } else {
-            return
-          }
-        })
-      .catch((error) => {
-        return
-      })
-    } catch (error) {
-      return
-    }
-  }
-  const setMemberState = async () => {
-    console.log('Get member')
-    try {
-      await memberstack.getCurrentMember()
-      .then(async ({ data: member }) => {
-          if (member !== null) {
-            memberJson = await memberstack.getMemberJSON();
-            console.log(memberJson)
-          } else {
-            console.log('Failed to get JSON')
-            return
-          }
-        })
-      .catch((error) => {
-        return
-      })
-    } catch (error) {
-      return
-    }
-  }
-  const receiveEvent = async () => {
-    const rootElement = document.getElementById('root');
-    rootElement.addEventListener('memberData', (event) => {
-      console.log('Successfully listened to event!')
-      console.log(event.detail)
-      memberJson = event.detail;
-    });
-  }
-  const setConnectionState = () => {
-    treeState.connections = stateUtilities.constructConnections(treeState.root.descendants())
-    setConnections(treeState.connections)
-  }
-  const setTreeState =() => {
-    setRootState()
-    treeState.activeNode.current = stateUtilities.resetActiveNode(treeState.activeNode.current)
-    treeState.camera = stateUtilities.resetCamera(treeState.cameraPosition)
-    setConnectionState()
-  }
-  const changeTree = ()=>{
-    setTreeState()
-    TreeUI.onChangeTree(treeState.activeNode.current)
-  }
-
-  useEffect(()=>{
-    d3.select("#clear-button")
-      .on('click', ()=>{TreeUI.onClearTreeAndSidebar(treeState.activeNode.current, treeState.member.data.completedArticlesID)})
-    d3.select("#drop-field")
-      .on('change', changeTree)
-    d3.select('#connections')
-      .on('change', ()=>{RadialTreeUI.displayConnections(treeState.activeNode.current)})
-    d3.selectAll('input[name="color"]')
-      .on('change', ()=>{RadialTreeUI.colorNodes(treeState.root.descendants(), treeState.member.data.completedArticlesID, treeState.activeNode.current)});
-    d3.select('#search-input')
-      .on('input', ()=>{searchUtilities.handleSearch(treeState.root.descendants(), treeState.member.data.completedArticlesID, treeState.activeNode.current, treeState.cameraPosition)})
-      .on('click', ()=>{searchUtilities.handleSearch(treeState.root.descendants(), treeState.member.data.completedArticlesID, treeState.activeNode.current, treeState.cameraPosition)})
-  })
-
-  const asyncMember = async () => {
-    // if(!useTestMember && activateMemberstack) await memberstack.logout()
-    if(activateMemberstack) await receiveEvent() 
-    if(useTestMember) await setTestMember()
-    showLoadingScreen ? treeState.member = null : treeState.member = memberJson
-    setMember(treeState.member)
-  }
-
-  useEffect(()=>{
-    setTreeState()
-    asyncMember()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  const [isMobile, setIsMobile] = useState(false);
-  const [isIncomprehensible, setIsIncomprehensible] = useState(false);
-
+  let [isMobile, setIsMobile] = useState(false);
+  let [isIncomprehensible, setIsIncomprehensible] = useState(false);
   const handleWindowSizeChange = () => {
     if (window.innerWidth < 768) {
       setIsMobile(true);
@@ -191,6 +66,116 @@ function Tree() {
     }
   };
 
+  const debounce = (fn, ms) => {
+    let timer
+    return _ => {
+      clearTimeout(timer)
+      timer = setTimeout(_ => {
+        timer = null
+        fn.apply(this, arguments)
+      }, ms)
+    };
+  }
+  const handleResize = () => {
+    debounce(
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      }), 1000)
+    SidebarUI.clearUI()
+  }
+  const setRootState = () => {
+    let category
+    try {
+      category = d3.select("#drop-field").node().value;
+    } catch (error) {
+      category = "All"
+    }
+    let treeRadius = treeUtilities.getTreeRadius(category)
+    let filterRecords = treeUtilities.filterRecords(records, category)
+    treeState.root = treeUtilities.processRoot(filterRecords, treeRadius)
+    setRoot(treeState.root)
+  }
+  const setMemberState = (memberJson) => {
+    showLoadingScreen ? treeState.member = null : treeState.member = memberJson
+    setMember(treeState.member)
+  }
+  const setTestMember = async () => {
+    try {
+      await memberstack.loginMemberEmailPassword({
+        email: testEmail,
+        password: testPassword
+      })
+      .then(async ({ data: member }) => {
+          if (member !== null) {
+            memberJson = await memberstack.getMemberJSON();
+            setMemberState(memberJson)
+          } else {
+            return
+          }
+        })
+      .catch((error) => {
+        return
+      })
+    } catch (error) {
+      return
+    }
+  }
+  const setConnectionState = () => {
+    treeState.connections = stateUtilities.constructConnections(treeState.root.descendants())
+    setConnections(treeState.connections)
+  }
+  const setTreeState =() => {
+    setRootState()
+    treeState.activeNode.current = stateUtilities.resetActiveNode(treeState.activeNode.current)
+    treeState.camera = stateUtilities.resetCamera(treeState.cameraPosition)
+    setConnectionState()
+  }
+  const changeTree = ()=>{
+    setTreeState()
+    TreeUI.onChangeTree(treeState.activeNode.current)
+  }
+
+  // For UI
+  useEffect(()=>{
+    d3.select("#clear-button")
+      .on('click', ()=>{TreeUI.onClearTreeAndSidebar(treeState.activeNode.current, treeState.member.data.completedArticlesID)})
+    d3.select("#drop-field")
+      .on('change', changeTree)
+    d3.select('#connections')
+      .on('change', ()=>{RadialTreeUI.displayConnections(treeState.activeNode.current)})
+    d3.selectAll('input[name="color"]')
+      .on('change', ()=>{RadialTreeUI.colorNodes(treeState.root.descendants(), treeState.member.data.completedArticlesID, treeState.activeNode.current)});
+    d3.select('#search-input')
+      .on('input', ()=>{searchUtilities.handleSearch(treeState.root.descendants(), treeState.member.data.completedArticlesID, treeState.activeNode.current, treeState.cameraPosition)})
+      .on('click', ()=>{searchUtilities.handleSearch(treeState.root.descendants(), treeState.member.data.completedArticlesID, treeState.activeNode.current, treeState.cameraPosition)})
+  })
+
+  // Production - listen to dispatch by Webflow
+  useEffect(() => {
+    const handleEventFromWebflow = async (event) => {
+      if (event.detail) {
+        console.log('Received event from Webflow:', event.detail);
+        memberJson = await event.detail;
+        setMemberState(memberJson)
+      }
+    };
+
+    document.addEventListener('memberData', handleEventFromWebflow);
+    return () => {
+      document.removeEventListener('memberData', handleEventFromWebflow);
+    };
+  }, []);
+
+  // State
+  useEffect(()=>{
+    if(useTestMember) setTestMember()
+    setTreeState()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  // Window
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
     return () => window.removeEventListener('resize', handleWindowSizeChange);

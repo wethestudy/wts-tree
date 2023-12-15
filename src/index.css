@@ -586,6 +586,9 @@ label{
 .media-warning-wrapper p{
   font-size: small;
 }
+.loading-link{
+  color: black;
+}
 
 @media only screen and (max-width: 840px) {
   /* Mobile View */
