@@ -18,7 +18,7 @@ function Camera(svg, cameraPosition) {
   d3.select('#navigation-button-center')
     .on('click', () => {
       svg.transition()
-        .call(zoom.scaleTo, 1)
+        .call(zoom.scaleTo, cameraUtilities.zoomProperties.defaultZoomScale)
         .call(zoom.translateTo, 0, 0);
     });
 }

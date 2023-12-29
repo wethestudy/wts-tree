@@ -1,4 +1,4 @@
-const database = [
+[
   {
     "id": "rec01WMpgA0BKWqtG",
     "createdTime": "2023-06-24T14:21:46.000Z",
@@ -235,8 +235,7 @@ const database = [
       ],
       "Tree: Name": "Ellipse",
       "Tree: Sibling Posts": [
-        "recKVtNXqxjiIDU3l",
-        "recePfQ2Zp0nxNJjV"
+        "recKVtNXqxjiIDU3l"
       ],
       "Tree: Child Posts": [
         "recvmRsviSlXKtk6G",
@@ -251,7 +250,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:14.000Z",
+      "Last Modified": "2023-08-26T11:47:53.000Z",
       "Airtable ID": "rec2tENApTjs7PjKp"
     }
   },
@@ -842,14 +841,14 @@ const database = [
         "rechNTAYHib2WjS0m"
       ],
       "Organization: Category": "Mathematics",
-      "Organization: Sibling Order": 1,
+      "Organization: Sibling Order": 2,
       "Organization: Subcategory": "Calculus",
       "SEO: Post Summary": "Differential calculus has countless applications in the real world. Let's explore these and see how we can use calculus to solve various problems.",
       "Item ID": "647dd046378f73aa3d809bf5",
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:14.000Z",
+      "Last Modified": "2023-12-28T15:33:53.000Z",
       "Airtable ID": "rec7T99TpcQy7UPcm"
     }
   },
@@ -1543,7 +1542,6 @@ const database = [
       ],
       "Tree: Name": "Classical Approach",
       "Tree: Sibling Posts": [
-        "recmcAjSkLB4iSk2S",
         "reclu91SFS4MXS0dW",
         "recdvvUmpqkPr9VLA"
       ],
@@ -1552,14 +1550,14 @@ const database = [
         "recsjEmwRv84joHlf"
       ],
       "Organization: Category": "Engineering",
-      "Organization: Sibling Order": 4,
+      "Organization: Sibling Order": 3,
       "Organization: Subcategory": "Structural Engineering",
       "SEO: Post Summary": "In this series of posts, we'll explore the classical approach when analyzing structures. It serves as the backbone of the entire structural analysis process. ",
       "Item ID": "64831bca0db34f711528bb3b",
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:04.000Z",
+      "Last Modified": "2023-12-28T15:33:45.000Z",
       "Airtable ID": "recFnOVAj5Jzh7pu9"
     }
   },
@@ -2259,8 +2257,8 @@ const database = [
       ],
       "Tree: Name": "Types",
       "Tree: Sibling Posts": [
-        "recpMuLYQFEXmfUGu",
-        "recZ7eQYVAUUX6thM"
+        "recZ7eQYVAUUX6thM",
+        "recpMuLYQFEXmfUGu"
       ],
       "Organization: Category": "Engineering",
       "Organization: Sibling Order": 3,
@@ -2270,7 +2268,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:12.000Z",
+      "Last Modified": "2023-12-28T15:33:52.000Z",
       "Airtable ID": "recNDXO7pnC8Tun42"
     }
   },
@@ -2906,6 +2904,35 @@ const database = [
     }
   },
   {
+    "id": "recSTdPWKbPSqe75d",
+    "createdTime": "2023-06-24T14:21:42.000Z",
+    "fields": {
+      "Name": "Frame Analysis Examples",
+      "Slug": "frame-analysis-examples",
+      "Tree: Parent Post": [
+        "recCNelNosYyMEANO"
+      ],
+      "Tree: Name": "Analysis Examples",
+      "Tree: Sibling Posts": [
+        "recLWJnaiwLjqzACi"
+      ],
+      "Tree: Child Posts": [
+        "recXxLMdboDGNm2QJ",
+        "rectJopYHKsq6uzf9"
+      ],
+      "Organization: Category": "Engineering",
+      "Organization: Sibling Order": 2,
+      "Organization: Subcategory": "Structural Engineering",
+      "SEO: Post Summary": "This series of posts show several other examples of how to analyze frames. This section focuses on unique examples or other illustrations of different analysis methods.",
+      "Item ID": "64833b983d5c25f54cd34203",
+      "State": "Active",
+      "Organization: Topic": "Structural Analysis",
+      "Article: Revision": 1,
+      "Last Modified": "2023-08-26T08:47:21.000Z",
+      "Airtable ID": "recSTdPWKbPSqe75d"
+    }
+  },
+  {
     "id": "recSWPgCcY58JfBRE",
     "createdTime": "2023-06-24T14:21:44.000Z",
     "fields": {
@@ -3192,6 +3219,39 @@ const database = [
       "Article: Revision": 1,
       "Last Modified": "2023-12-28T15:33:49.000Z",
       "Airtable ID": "recVFJZLyOwTQZQ7C"
+    }
+  },
+  {
+    "id": "recVOUfcRY8nCgFuA",
+    "createdTime": "2023-06-24T14:21:42.000Z",
+    "fields": {
+      "Name": "Beam Analysis Examples",
+      "Slug": "beam-analysis-examples",
+      "Tree: Parent Post": [
+        "recVluKkdGdtSDwKw"
+      ],
+      "Tree: Name": "Analysis Examples",
+      "Tree: Sibling Posts": [
+        "rec9Opg7uUaNVG6f3"
+      ],
+      "Tree: Child Posts": [
+        "rec15nZj71Qa6UvVa",
+        "rechNtjUxTVcHmFMT",
+        "recevAHgPmwv7rNm1",
+        "rec01WMpgA0BKWqtG",
+        "recBsDgA57xdOlHPN",
+        "reciCW7goqgOc0WHu"
+      ],
+      "Organization: Category": "Engineering",
+      "Organization: Sibling Order": 2,
+      "Organization: Subcategory": "Structural Engineering",
+      "SEO: Post Summary": "This series of posts show several other examples of how to analyze beams. This section focuses on unique examples or other illustrations of different analysis methods.",
+      "Item ID": "64833b8e3d5c25f54cd3381f",
+      "State": "Active",
+      "Organization: Topic": "Structural Analysis",
+      "Article: Revision": 1,
+      "Last Modified": "2023-08-26T11:45:56.000Z",
+      "Airtable ID": "recVOUfcRY8nCgFuA"
     }
   },
   {
@@ -3520,8 +3580,8 @@ const database = [
       ],
       "Tree: Name": "Classification",
       "Tree: Sibling Posts": [
-        "recpMuLYQFEXmfUGu",
-        "recNDXO7pnC8Tun42"
+        "recNDXO7pnC8Tun42",
+        "recpMuLYQFEXmfUGu"
       ],
       "Organization: Category": "Engineering",
       "Organization: Sibling Order": 2,
@@ -3531,7 +3591,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:10.000Z",
+      "Last Modified": "2023-12-28T15:33:47.000Z",
       "Airtable ID": "recZ7eQYVAUUX6thM"
     }
   },
@@ -4123,7 +4183,6 @@ const database = [
       ],
       "Tree: Name": "Analysis Types",
       "Tree: Sibling Posts": [
-        "recmcAjSkLB4iSk2S",
         "reclu91SFS4MXS0dW",
         "recFnOVAj5Jzh7pu9"
       ],
@@ -4135,14 +4194,14 @@ const database = [
         "recPG0futauieMIQ5"
       ],
       "Organization: Category": "Engineering",
-      "Organization: Sibling Order": 3,
+      "Organization: Sibling Order": 2,
       "Organization: Subcategory": "Structural Engineering",
       "SEO: Post Summary": "In this post, we'll explore a basic overview of the different types of analysis used when investigating structures. This serves as an introduction to the big world of structural analysis.",
       "Item ID": "647de01f02bcec5f50c2142f",
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T06:17:48.000Z",
+      "Last Modified": "2023-12-28T15:33:52.000Z",
       "Airtable ID": "recdvvUmpqkPr9VLA"
     }
   },
@@ -4997,7 +5056,6 @@ const database = [
       ],
       "Tree: Name": "Key Analysis Concepts",
       "Tree: Sibling Posts": [
-        "recmcAjSkLB4iSk2S",
         "recdvvUmpqkPr9VLA",
         "recFnOVAj5Jzh7pu9"
       ],
@@ -5007,15 +5065,47 @@ const database = [
         "recogNWkcjCALAAJl"
       ],
       "Organization: Category": "Engineering",
-      "Organization: Sibling Order": 2,
+      "Organization: Sibling Order": 1,
       "Organization: Subcategory": "Structural Engineering",
       "SEO: Post Summary": "Most analysis methods in structural engineering revolve around the following key concepts: equilibrium principle, compatibility conditions, and constitutive equations.",
       "Item ID": "647de027cf62f74d0876aaa5",
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:11.000Z",
+      "Last Modified": "2023-12-28T15:33:49.000Z",
       "Airtable ID": "reclu91SFS4MXS0dW"
+    }
+  },
+  {
+    "id": "recm4RLyYHNuFYjOz",
+    "createdTime": "2023-06-24T14:21:42.000Z",
+    "fields": {
+      "Name": "Truss Analysis Examples",
+      "Slug": "truss-analysis-examples",
+      "Tree: Parent Post": [
+        "rec46n0JQr6qHOLqN"
+      ],
+      "Tree: Name": "Analysis Examples",
+      "Tree: Sibling Posts": [
+        "rec14W03Sx9TmmYag"
+      ],
+      "Tree: Child Posts": [
+        "recLuBaVQKYdYaJwV",
+        "recxvySqJ68aNUY2C",
+        "rec1TacTSSrRdvKIp",
+        "rechcyyNzsaK6dp6w",
+        "rec3UxyMlImgxTUxt"
+      ],
+      "Organization: Category": "Engineering",
+      "Organization: Sibling Order": 2,
+      "Organization: Subcategory": "Structural Engineering",
+      "SEO: Post Summary": "This series of posts show several other examples of how to analyze trusses. This section focuses on unique examples or other illustrations of different analysis methods.",
+      "Item ID": "64833b7bfd3b2affb8c4ba9f",
+      "State": "Active",
+      "Organization: Topic": "Structural Analysis",
+      "Article: Revision": 1,
+      "Last Modified": "2023-08-26T08:47:23.000Z",
+      "Airtable ID": "recm4RLyYHNuFYjOz"
     }
   },
   {
@@ -5034,10 +5124,8 @@ const database = [
         "recZLwB6pRypXoEqn"
       ],
       "Tree: Child Posts": [
-        "recmcAjSkLB4iSk2S",
-        "reclu91SFS4MXS0dW",
-        "recdvvUmpqkPr9VLA",
-        "recFnOVAj5Jzh7pu9"
+        "recsjEmwRv84joHlf",
+        "recmcAjSkLB4iSk2S"
       ],
       "Organization: Category": "Engineering",
       "Organization: Sibling Order": 4,
@@ -5047,7 +5135,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:04.000Z",
+      "Last Modified": "2023-08-26T11:45:46.000Z",
       "Airtable ID": "recmaiXD2wjuhYExE"
     }
   },
@@ -5061,6 +5149,11 @@ const database = [
         "recmaiXD2wjuhYExE"
       ],
       "Tree: Name": "Introduction",
+      "Tree: Child Posts": [
+        "reclu91SFS4MXS0dW",
+        "recdvvUmpqkPr9VLA",
+        "recFnOVAj5Jzh7pu9"
+      ],
       "Organization: Category": "Engineering",
       "Organization: Sibling Order": 1,
       "Organization: Subcategory": "Structural Engineering",
@@ -5069,13 +5162,8 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T06:17:46.000Z",
-      "Airtable ID": "recmcAjSkLB4iSk2S",
-      "Tree: Sibling Posts": [
-        "reclu91SFS4MXS0dW",
-        "recdvvUmpqkPr9VLA",
-        "recFnOVAj5Jzh7pu9"
-      ]
+      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Airtable ID": "recmcAjSkLB4iSk2S"
     }
   },
   {
@@ -5376,8 +5464,8 @@ const database = [
       ],
       "Tree: Name": "Analytical Model",
       "Tree: Sibling Posts": [
-        "recgmK7kf3ke7ufdP",
-        "recoeDE0cGtWl0Kn9"
+        "recoeDE0cGtWl0Kn9",
+        "recgmK7kf3ke7ufdP"
       ],
       "Organization: Category": "Engineering",
       "Organization: Sibling Order": 3,
@@ -5387,7 +5475,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T06:17:48.000Z",
+      "Last Modified": "2023-12-28T15:33:52.000Z",
       "Airtable ID": "reconRJ15nWVA3rzT"
     }
   },
@@ -5435,8 +5523,8 @@ const database = [
       ],
       "Tree: Name": "Parts",
       "Tree: Sibling Posts": [
-        "recZ7eQYVAUUX6thM",
-        "recNDXO7pnC8Tun42"
+        "recNDXO7pnC8Tun42",
+        "recZ7eQYVAUUX6thM"
       ],
       "Organization: Category": "Engineering",
       "Organization: Sibling Order": 1,
@@ -5446,7 +5534,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:11.000Z",
+      "Last Modified": "2023-12-28T15:33:49.000Z",
       "Airtable ID": "recpMuLYQFEXmfUGu"
     }
   },
@@ -5492,8 +5580,8 @@ const database = [
       ],
       "Tree: Name": "Work and Energy",
       "Tree: Sibling Posts": [
-        "recsltluReqUJhLiI",
         "recpVIeFvijXdILrW",
+        "recsltluReqUJhLiI",
         "reccCcMTGsGY2Hgi8",
         "recvVSVJ6AfjFGsAq"
       ],
@@ -5508,7 +5596,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Work and Energy",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:04.000Z",
+      "Last Modified": "2023-12-28T15:33:45.000Z",
       "Airtable ID": "recpYqm8AcNw6d2CX"
     }
   },
@@ -6585,7 +6673,7 @@ const database = [
       "Name": "How to Analyze Complex Trusses?",
       "Slug": "how-to-analyze-complex-trusses",
       "Tree: Parent Post": [
-        "rec46n0JQr6qHOLqN"
+        "recm4RLyYHNuFYjOz"
       ],
       "Tree: Name": "Complex Truss Analysis",
       "Tree: Sibling Posts": [
@@ -6606,7 +6694,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:12.000Z",
+      "Last Modified": "2023-12-28T15:33:52.000Z",
       "Airtable ID": "recxvySqJ68aNUY2C"
     }
   },
@@ -6717,8 +6805,7 @@ const database = [
         "recDNNRS4bqMf5vRs",
         "rechUEV8mTQqcSxjj",
         "recu1GZ7Err23mN86",
-        "rechwpC1c0dSB5LhX",
-        "recnUvDePj7m9c4Z5"
+        "rechwpC1c0dSB5LhX"
       ],
       "Organization: Category": "Mathematics",
       "Organization: Sibling Order": 2,
@@ -6728,7 +6815,7 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:14.000Z",
+      "Last Modified": "2023-12-28T15:33:53.000Z",
       "Airtable ID": "recz0XAKWnXf3rqPr"
     }
   },
@@ -6837,5 +6924,3 @@ const database = [
     }
   }
 ]
-
-export default database

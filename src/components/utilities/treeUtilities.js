@@ -15,16 +15,17 @@ export const treeUtilities = {
       }
       records.push({
         id: record.id,
-        siblingOrder: record.fields["Organization: Sibling Order"],
         seoPostSummary: record.fields["SEO: Post Summary"],
         link: `${links["treeLink"]}/${record.fields["Slug"]}`,
-        subcategory: record.fields["Organization: Subcategory"],
         parentId: parentPlaceholder,
-        topic: record.fields["Organization: Topic"],
-        premiumContent: record.fields["Article: Is Paid Content?"],
-        connections: record.fields["Tree: Connections"],
         category: record.fields["Organization: Category"],
+        subcategory: record.fields["Organization: Subcategory"],
+        topic: record.fields["Organization: Topic"],
+        posttype: record.fields["Organization: Post Type"],
+        siblingOrder: record.fields["Organization: Sibling Order"],
+        premiumContent: record.fields["Article: Is Paid Content?"],
         revision: record.fields["Article: Revision"],
+        connections: record.fields["Tree: Connections"],
         courseMapName: record.fields["Tree: Name"],
         name: record.fields["Name"],
       });

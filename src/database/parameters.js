@@ -30,12 +30,11 @@ export const parameters = {
         defaultOpacity: 0.5,
     },
     zoomProperties: {
+        defaultZoomScale: 0.65,
         radius: 3000,
         minScale: 0.4,
         maxScale: 4,
         radiusFactor: 1.5,
-        centerOffsetX: 3.75,
-        centerOffsetY: 7
     },
     markerProperties: {
         refX: '5',

@@ -17,3 +17,9 @@ const topics = [
     "Structural Modeling",
     "Strength of Materials"
 ]
+const postType = [
+    "Guide",
+    "Example",
+    "Crossroad",
+    "Concept"
+]

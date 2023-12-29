@@ -16,7 +16,7 @@ export const nodeUI = {
         color = "lightslategrey";
         break;
       case "Engineering":
-        color = "darkgoldenrod";
+        color = "#1e90ff";
         break;
       default:
         break;
@@ -79,6 +79,25 @@ export const nodeUI = {
     }
     return color
   },
+  fillPostType: (category) => {
+    let color = nodeUI.defFill()
+    switch (category) {
+      case "Example":
+        color = "burlywood";
+        break;
+      case "Concept":
+        color = "darkgoldenrod";
+        break;
+      case "Crossroad":
+        break;
+      case "Guide":
+        color = "#1e90ff";
+        break;
+      default:
+        break;
+    }
+    return color
+  },
   fillByCode: (node) => {
     let color
     let checkedValue = d3.select('input[name="color"]:checked').node().value
@@ -88,6 +107,9 @@ export const nodeUI = {
         break;
       case "topic":
         color = nodeUI.fillTopic(node.data.topic);
+        break;
+      case "posttype":
+        color = nodeUI.fillPostType(node.data.posttype);
         break;
       default:
         color = nodeUI.defFill()

@@ -1,4 +1,4 @@
-const database = [
+[
   {
     "id": "rec01WMpgA0BKWqtG",
     "createdTime": "2023-06-24T14:21:46.000Z",
@@ -6837,5 +6837,3 @@ const database = [
     }
   }
 ]
-
-export default database

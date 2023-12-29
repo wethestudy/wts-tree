@@ -37,6 +37,10 @@ export const SidebarUI = {
     let searchTextArea = document.getElementById("search-input");
     searchTextArea.value = "";
   },
+  clearElement: (element)=>{
+    element.text("");
+    element.style('background-color', '#d7d3d0');
+  },
   resetCard: () => {
     let cardTitle = d3.select('#card-title');
     cardTitle.text("Select a Tree Node");
@@ -44,74 +48,85 @@ export const SidebarUI = {
     let cardBlock = d3.select('#card-block');
     cardBlock.text("");
     cardBlock.style('background-color', '#d7d3d0');
-    cardBlock.style('height', '6rem');
+    cardBlock.style('height', '2rem');
 
     let cardCategory = d3.select('#card-category');
-    cardCategory.text("");
-    cardCategory.style('background-color', '#d7d3d0');
-
     let cardSubcategory = d3.select('#card-subcategory');
-    cardSubcategory.text("");
-    cardSubcategory.style('background-color', '#d7d3d0');
-
     let cardTopic = d3.select('#card-topic');
-    cardTopic.text("");
-    cardTopic.style('background-color', '#d7d3d0');
-
     let cardRevision = d3.select('#card-revision');
-    cardRevision.text("");
-    cardRevision.style('background-color', '#d7d3d0');
-
     let cardOrder = d3.select('#card-order');
-    cardOrder.text("");
-    cardOrder.style('background-color', '#d7d3d0');
-
+    let cardPostType = d3.select('#card-posttype');
     let cardButton = d3.select('#card-button');
-    cardButton.attr('href', "");
-
     let mobileCardButton = d3.select('#mobile-card-button');
+
+    SidebarUI.clearElement(cardCategory)
+    SidebarUI.clearElement(cardSubcategory)
+    SidebarUI.clearElement(cardTopic)
+    SidebarUI.clearElement(cardRevision)
+    SidebarUI.clearElement(cardOrder)
+    SidebarUI.clearElement(cardPostType)
+
+    cardButton.attr('href', "");
     mobileCardButton.attr('href', "");
   },
   updateCard: (d) => {
     let cardTitle = d3.select('#card-title');
+    let cardBlock = d3.select('#card-block');
+    let cardCategory = d3.select('#card-category');
+    let cardSubcategory = d3.select('#card-subcategory');
+    let cardTopic = d3.select('#card-topic');
+    let cardRevision = d3.select('#card-revision');
+    let cardOrder = d3.select('#card-order');
+    let cardPostType = d3.select('#card-posttype');
+    let cardButton = d3.select('#card-button');
+    let mobileCardButton = d3.select('#mobile-card-button');
+
     cardTitle.text(d.data.name);
     if (d.data.seoPostSummary) {
-      let cardBlock = d3.select('#card-block');
       cardBlock.text(d.data.seoPostSummary);
       cardBlock.style('background-color', 'transparent');
       cardBlock.style('height', 'auto');
     }
     if (d.data.category) {
-      let cardCategory = d3.select('#card-category');
       cardCategory.text(d.data.category);
       cardCategory.style('background-color', 'transparent');
+    } else {
+      SidebarUI.clearElement(cardCategory)
     }
     if (d.data.subcategory) {
-      let cardSubcategory = d3.select('#card-subcategory');
       cardSubcategory.text(d.data.subcategory);
       cardSubcategory.style('background-color', 'transparent');
+    } else {
+      SidebarUI.clearElement(cardSubcategory)
     }
     if (d.data.topic) {
-      let cardTopic = d3.select('#card-topic');
       cardTopic.text(d.data.topic);
       cardTopic.style('background-color', 'transparent');
+    } else {
+      SidebarUI.clearElement(cardTopic)
     }
     if (d.data.revision) {
-      let cardRevision = d3.select('#card-revision');
       cardRevision.text(d.data.revision);
       cardRevision.style('background-color', 'transparent');
+    } else {
+      SidebarUI.clearElement(cardRevision)
     }
     if (d.data.siblingOrder) {
-      let cardOrder = d3.select('#card-order');
       cardOrder.text(d.data.siblingOrder);
       cardOrder.style('background-color', 'transparent');
+    } else {
+      SidebarUI.clearElement(cardOrder)
+    }
+    if (d.data.posttype) {
+      cardPostType.text(d.data.posttype);
+      cardPostType.style('background-color', 'transparent');
+    } else {
+      SidebarUI.clearElement(cardPostType)
     }
     if (d.data.link) {
-      let cardButton = d3.select('#card-button');
       cardButton.attr('href', d.data.link);
     }
     if (d.data.link) {
-      let mobileCardButton = d3.select('#mobile-card-button');
       mobileCardButton.attr('href', d.data.link);
     }
   },

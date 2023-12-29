@@ -13,4 +13,24 @@
   <body>
     <div id="root"></div>
   </body>
+  <!-- <script>
+    const intervalLocal = setInterval(()=>{
+        document.addEventListener('memberData', function(event) {
+            console.log('Event dispatched!');
+            console.log('Event data:', event.detail);
+            clearInterval(intervalLocal)
+        });
+        let memberJson = {data:{
+        "completedArticlesID": [
+            "receR3QWJziq79jYm",
+            "rec45eAk7qieXpK0Q"
+        ]
+        }};
+        document.dispatchEvent(new CustomEvent('memberData', { detail: memberJson}));
+    }, 5000)
+
+    setTimeout(()=>{
+        clearInterval(intervalLocal)
+    }, 20000)
+  </script> -->
 </html>

@@ -55,6 +55,15 @@ function TreeSettings() {
               />
             <label htmlFor="radio-topic">Topic</label>
           </div>
+          <div className="form-wrapper">
+            <input 
+              id="radio-posttype"
+              type="radio" 
+              name="color" 
+              value="posttype" 
+              />
+            <label htmlFor="radio-posttype">Post Type</label>
+          </div>
         </div>
       </div>
     </div>;

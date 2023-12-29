@@ -24,7 +24,7 @@ const Loading = () => {
         <div className='loading-message'>
             {!showComponent ?
                 <p>Now Loading...</p> : 
-                <p>Trouble loading? Visit our <a className='loading-link' href={links["indexLink"]}>index</a>
+                <p>Trouble loading? Visit our <a className='loading-link' href={links["indexLink"]} target="_blank">index</a>
                 </p>
             }
         </div>

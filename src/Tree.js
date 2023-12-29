@@ -17,6 +17,7 @@ import { Search } from "./components/Search.js";
 import { searchUtilities } from "./components/utilities/searchUtilities.js";
 import { MediaWarning } from "./components/alert/MediaWarning.js";
 import { showLoadingScreen, useTestMember, testEmail, testPassword } from "./devSettings.js";
+import { cameraUtilities } from './components/utilities/cameraUtilities.js';
 
 function Tree() {
   let records = treeUtilities.processJSON(database)
@@ -37,7 +38,7 @@ function Tree() {
     root: root,
     member: member,
     activeNode: activeNode,
-    cameraPosition: {k: 1, x: 0, y: 0},
+    cameraPosition: {k: cameraUtilities.zoomProperties.defaultZoomScale, x: 0, y: 0},
     connections: connections,
   }
 

@@ -4,7 +4,7 @@ import { parameters } from "../../database/parameters";
 export const cameraUtilities = {
     zoomProperties: parameters.zoomProperties,
     handleZoom: (svg, camera, e) => {
-        camera.k = e.transform.k
+        // camera.k = e.transform.k
         camera.x = ((window.innerWidth/2) - e.transform.x)/e.transform.k
         camera.y = ((window.innerHeight/2) - e.transform.y)/e.transform.k
         svg.selectAll('g')
@@ -14,8 +14,14 @@ export const cameraUtilities = {
         let zoom = d3.zoom()
           .scaleExtent([cameraUtilities.zoomProperties.minScale, cameraUtilities.zoomProperties.maxScale])
           .translateExtent([
-            [-cameraUtilities.zoomProperties.radius * 1.5, -cameraUtilities.zoomProperties.radius * 1.5],
-            [cameraUtilities.zoomProperties.radius * 1.5, cameraUtilities.zoomProperties.radius * 1.5]
+            [-cameraUtilities.zoomProperties.radius * 
+              cameraUtilities.zoomProperties.radiusFactor, 
+              -cameraUtilities.zoomProperties.radius * 
+              cameraUtilities.zoomProperties.radiusFactor],
+            [cameraUtilities.zoomProperties.radius * 
+              cameraUtilities.zoomProperties.radiusFactor, 
+              cameraUtilities.zoomProperties.radius * 
+              cameraUtilities.zoomProperties.radiusFactor]
         ])
           .on('zoom', (e)=>{cameraUtilities.handleZoom(svg, camera, e)});
         return zoom

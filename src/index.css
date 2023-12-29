@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   width: 100%;
+  font-size: 0.9rem;
 }
 
 /* Tree */
@@ -29,23 +30,23 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30rem;
+  width: 27.5rem;
   height: 100%;
   overflow: auto;
 }
 .sidebar-wrapper{
   display: grid;
   padding: 2rem 4rem;
-  grid-template-rows: 0.5fr 3fr 2fr 2fr 0.5fr;
+  grid-template-rows: 0.3fr 3fr 2fr 2fr 0.5fr;
   margin-top: 7rem;
-  row-gap: 2rem;
+  row-gap: 0.75rem;
 }
 
 /* Sidebar - Header */
 .sidebar-header{
   display: grid;
   grid-template-rows: min-content;
-  row-gap: 1rem;
+  row-gap: 0.5rem;
 }
 .header-wrapper{
   display: grid;
@@ -177,7 +178,7 @@ body {
   display: grid;
   grid-template-rows: auto;
   border-radius: 20px;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .card-scroll{
   overflow: none;
@@ -190,7 +191,7 @@ body {
   visibility: hidden;
 }
 .card-title{
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 100%;
   font-weight: bold;
 }
@@ -198,6 +199,7 @@ body {
   display: grid;
   grid-template-columns: 0.35fr 5fr;
   height: 100%;
+  font-size: 0.9rem;
 }
 .card-border{
   border-left: 5px black solid;
@@ -205,15 +207,14 @@ body {
 .card-block{
   background-color: #d7d3d0;
   border-radius: 20px;
-  height: 6rem;
+  height: 2rem;
 }
 .card-wrapper{
   display: grid;
   grid-template-columns: 50% 50%;
-  align-items: center;
 }
 .card-label{
-  font-size: 1rem;
+  font-size: 0.9rem;
   align-items: center;
 }
 .card-field{
@@ -222,7 +223,8 @@ body {
   background-color: #d7d3d0;
   border-radius: 20px;
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
+  
 }
 .card-button{
   color: white;
@@ -329,7 +331,8 @@ body {
   appearance:none;
 }
 .form-wrapper{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
   gap: 0.25rem;
 }
 input:where([type="checkbox"], [type="radio"]){
@@ -588,6 +591,7 @@ label{
 }
 .loading-link{
   color: black;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 840px) {
@@ -608,6 +612,9 @@ label{
   }
   .input-container{
     width: 100%;
+  }
+  .input-field{
+    font-size: 16px;
   }
   .mobile-secondary{
     display: grid;
@@ -708,20 +715,21 @@ label{
   .sidebar-card{
     background-color: white;
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 20px;
     position: fixed;
-    bottom: 10rem;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, 75%);
     width: 75%;
-    height: 50%;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .card-scroll{
+    align-self: baseline;
     overflow: scroll;
     display: grid;
     grid-template-rows: auto;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
   .sidebar-buttons{
     visibility: visible;
@@ -933,6 +941,9 @@ label{
   }
   .mobile-exit-wrapper:active{
     background: #b59d69;
+  }
+  .drop-field{
+    font-size: 16px;
   }
   /* Search */
   #search-wrapper{

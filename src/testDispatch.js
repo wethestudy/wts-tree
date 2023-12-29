@@ -27,13 +27,21 @@ const intervalWebflow = setInterval(()=>{
         console.log('Event data:', event.detail);
         clearInterval(intervalWebflow)
     });
-    memberstack.getCurrentMember()
-    .then(async ({ data: member }) => {
-        if (member) {
-        let memberJson = await memberstack.getMemberJSON();
+    try{
+        memberstack.getCurrentMember()
+        .then(async ({ data: member }) => {
+            if (member) {
+                let memberJson = await memberstack.getMemberJSON();
+                document.dispatchEvent(new CustomEvent('memberData', { detail: memberJson}));
+            } else {
+                let memberJson = {data:{"completedArticlesID": []}};
+                document.dispatchEvent(new CustomEvent('memberData', { detail: memberJson}));
+            }
+        })
+    } catch {
+        let memberJson = {data:{"completedArticlesID": []}};
         document.dispatchEvent(new CustomEvent('memberData', { detail: memberJson}));
     }
-    })
 }, 5000)
 
 setTimeout(()=>{

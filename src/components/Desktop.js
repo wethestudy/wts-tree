@@ -26,7 +26,7 @@ function DesktopHeader() {
       <SearchInput/>
     </div>
     <div className="header-buttons">
-      <a href={links["indexLink"]} className="index-button">Explore index</a>
+      <a href={links["indexLink"]} className="index-button" target="_blank">Explore index</a>
       <p className="clear-button" id="clear-button">Clear</p>
     </div>
   </div>;

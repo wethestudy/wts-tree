@@ -41,7 +41,11 @@ function TreeCard() {
             <div className="card-label">Sibling Order</div>
             <div className="card-field" id="card-order"></div>
           </div>
-          <a href="" className="card-button" id="card-button">EXPLORE</a>
+          <div className="card-wrapper">
+            <div className="card-label">Post Type</div>
+            <div className="card-field" id="card-posttype"></div>
+          </div>
+          <a href="" className="card-button" id="card-button" target="_blank">EXPLORE</a>
         </div>
       </div>;
   }
