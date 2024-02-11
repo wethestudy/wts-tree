@@ -5,8 +5,9 @@ import { TreeDefs } from "./TreeDefs.js";
 import { TreeNodes } from "./TreeNodes.js";
 import { TreePaths } from "./TreePaths.js";
 import { TreeConnections } from "./TreeConnections.js";
+import radialTreeStyle from "./radialtree.module.css"
 
-const RadialTree = ({treeState}) => {
+const RadialTree = ({treeState, tutorial, selectedTrack}) => {
   const svgRef = useRef();
   
   useEffect(() => {
@@ -19,22 +20,27 @@ const RadialTree = ({treeState}) => {
   });
 
   return (
-    <div className="radialtree-wrapper">
+    <div className={radialTreeStyle['radialtree-wrapper']}>
       <svg ref={svgRef}>
         <TreeDefs/>
         <TreeNodes 
           treeDescendants={treeState.root.descendants()}
           activeNode={treeState.activeNode.current}
           completedArticlesID={treeState.member.data.completedArticlesID}
+          masteredArticlesID={treeState.member.data.masteredArticlesID}
           cameraPosition={treeState.cameraPosition}
+          viewType={treeState.view.type}
+          tutorial={tutorial}
+          selectedTrack={selectedTrack}
         />
         <TreePaths 
           treeLinks={treeState.root.links()}
           completedArticlesID={treeState.member.data.completedArticlesID}
+          masteredArticlesID={treeState.member.data.masteredArticlesID}
         />
-        <TreeConnections 
+        {treeState.view.type === "default" ? <TreeConnections 
           treeConnections={treeState.connections}
-        />
+        /> : null}
       </svg>
     </div>
   );

@@ -1,0 +1,20 @@
+.media-warning{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+  .media-warning-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .media-warning-wrapper h2{
+    line-height: 0rem;
+  }
+  .media-warning-wrapper p{
+    font-size: small;
+  }

@@ -1,0 +1,54 @@
+.input-container {
+    position: relative;
+    display: inline-block;
+  }
+  .input-wrapper {
+    position: relative;
+  }
+  .input-wrapper select::-ms-expand,
+  .input-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    padding-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .input-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .input-wrapper::after {
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-search.svg') no-repeat center;
+    background-size: contain;
+    filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(96%) contrast(89%);
+    width: 20px;
+    height: 20px;
+  }
+  .input-field{
+    border: 2pt solid #999999;
+    height: 2.5rem;
+    border-radius: 20px;
+    font-family: 'Heebo', 'sans-serif';
+    padding-left: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    vertical-align: middle;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+
+  @media only screen and (max-width: 840px) {
+    .input-container{
+      width: 100%;
+    }
+    .input-field{
+      font-size: 16px;
+    }
+  }

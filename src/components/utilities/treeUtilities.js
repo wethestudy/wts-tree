@@ -61,5 +61,19 @@ export const treeUtilities = {
       default:
         return treeUtilities.treeProperties.defaultTreeRadius;
     }
+  },
+  findNodeById: (root, id) => {
+    if (root.id === id) {
+      return root;
+    }
+    if (root.children) {
+      for (const child of root.children) {
+        const found = treeUtilities.findNodeById(child, id);
+        if (found) {
+          return found;
+        }
+      }
+    }
+    return null;
   }
 };

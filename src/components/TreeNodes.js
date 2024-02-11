@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
 import { nodeFunctions } from "./utilities/nodeFunctions.js";
+import { onboardingFunctions } from "./utilities/onboardingFunctions.js";
 import { nodeUI } from "./ui/nodeUI.js";
 
-const Node = ({ node, completedArticlesID, activeNode, cameraPosition }) => {
+const Node = ({ node, completedArticlesID, masteredArticlesID, activeNode, cameraPosition, viewType, tutorial, selectedTrack }) => {
   const linkRef = useRef();
   const circleRef = useRef();
   const textRef = useRef();
@@ -16,19 +17,35 @@ const Node = ({ node, completedArticlesID, activeNode, cameraPosition }) => {
       .attr("transform", `rotate(${node.x * 180 / Math.PI - 90}) translate(${node.y},0)`);
     d3.select(circleRef.current)
       .attr("id", `circle-${node.data.id}`)
-      .attr("fill", ()=>nodeUI.fillNode(node, completedArticlesID))
-      .attr("opacity", ()=>nodeUI.opacityNode(node, completedArticlesID, false))
-      .attr("stroke", "transparent")
-      .attr("stroke-width", 0)
+      .attr("fill", ()=>nodeUI.fillNode(node, completedArticlesID, masteredArticlesID))
+      .attr("fill-opacity", ()=>nodeUI.opacityNode(node, completedArticlesID, masteredArticlesID, false))
+      .attr("stroke", ()=>{
+        switch(viewType){
+          case "default":
+            return nodeUI.strokeFill(node, selectedTrack)
+          case "popup":
+            return "transparent"
+          default:
+            break;
+        }
+      })
+      .attr("stroke-width", "0.4%")
+      .attr("stroke-opacity", 1)
       .attr("r", nodeUI.nodeProperties.r)
-      .on("click", (event) => nodeFunctions.click(activeNode, node, completedArticlesID, cameraPosition))
+      .on("click", (event) => {
+        if(tutorial){
+          onboardingFunctions.clickTutorial(activeNode, node, cameraPosition, completedArticlesID, masteredArticlesID)
+        } else {
+          nodeFunctions.click(activeNode, node, completedArticlesID, masteredArticlesID, cameraPosition, viewType)
+        }
+      })
       .on("mouseenter", (event) => {
         nodeFunctions.mouseover(node)
-        nodeUI.fillNode(node, completedArticlesID)
+        nodeUI.fillNode(node, completedArticlesID, masteredArticlesID)
       })
       .on("mouseleave", (event) => {
-        nodeFunctions.mouseleave(node, completedArticlesID)
-        nodeUI.fillNode(node, completedArticlesID)
+        nodeFunctions.mouseleave(node, completedArticlesID, masteredArticlesID)
+        nodeUI.fillNode(node, completedArticlesID, masteredArticlesID)
       })
       .classed("", function () {
         node.data.lockHover = false;
@@ -53,7 +70,7 @@ const Node = ({ node, completedArticlesID, activeNode, cameraPosition }) => {
   );
 };
 
-const TreeNodes = ({treeDescendants, activeNode, completedArticlesID, cameraPosition}) => {
+const TreeNodes = ({treeDescendants, activeNode, completedArticlesID, masteredArticlesID, cameraPosition, viewType, tutorial, selectedTrack}) => {
   return(
     <>
       <g id="node-group">
@@ -63,8 +80,12 @@ const TreeNodes = ({treeDescendants, activeNode, completedArticlesID, cameraPosi
               node={node} 
               index={index}
               completedArticlesID={completedArticlesID} 
+              masteredArticlesID={masteredArticlesID}
               activeNode={activeNode}
               cameraPosition={cameraPosition}
+              viewType={viewType}
+              tutorial={tutorial}
+              selectedTrack={selectedTrack}
             />
           })}
       </g>

@@ -1,17 +1,53 @@
 import * as d3 from "d3";
-import performSearch from "./performSearch";
-import { SidebarUI } from "../ui/SidebarUI";
+import { DesktopUI } from "../ui/DesktopUI";
 
 export const searchUtilities = {
-    handleSearch: (descendants, completedArticlesID, activeNode, cameraPosition) =>{
+    performSearch: (list, keyword) => {
+        const extractedData = list.map(item => item.data)
+        const filteredList = extractedData.filter(item => {
+        const itemValues = Object.values(item).map(value => {
+            
+            if (Array.isArray(value)) {
+            return JSON.stringify(value);
+            } else if (value === true) {
+                return ""
+            } else if (value === false) {
+                return ""
+            } else if (value === undefined){
+                return ""
+            }
+            
+            return value.toString().toLowerCase();
+        });
+    
+        const keywords = keyword.toLowerCase().split(' ');
+    
+        const keywordMatch = keywords.every(keyword =>
+            itemValues.some(value => value.includes(keyword))
+        );
+    
+        return keywordMatch;
+        });
+    
+        const output = list.filter(item => filteredList.includes(item.data));
+        return output;
+    },
+    handleSearch: (descendants, completedArticlesID, masteredArticlesID, activeNode, cameraPosition, viewType) =>{
         let searchInput = d3.select('#search-input').property('value');
-        SidebarUI.clearSearchResults()
+        DesktopUI.clearSearchResults()
         if (searchInput.length===0) {
-            SidebarUI.hideSearch()
+            DesktopUI.hideSearch()
             return
         }
-        let filteredResults = performSearch(descendants, searchInput);
+        let filteredResults = searchUtilities.performSearch(descendants, searchInput);
         let slicedFilteredResults = filteredResults.slice(0, 30);
-        SidebarUI.constructSearch(slicedFilteredResults, activeNode, completedArticlesID, cameraPosition)
+        DesktopUI.constructSearch(
+            slicedFilteredResults, 
+            activeNode, 
+            completedArticlesID, 
+            masteredArticlesID, 
+            cameraPosition, 
+            viewType
+        )
     }
 }

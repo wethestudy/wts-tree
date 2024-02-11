@@ -10,5 +10,13 @@ export const cameraFunctions = {
             zoom.translateTo, 
             coordinates.getCartesianCoordinate(d.x, d.y).x, 
             coordinates.getCartesianCoordinate(d.x, d.y).y)
+    },
+    lockCamera: ()=>{
+        d3.select('svg').on('.zoom', null)
+    },
+    unlockCamera: (camera) => {
+        let svg = d3.select('svg')
+        let zoom = cameraUtilities.initCamera(svg, camera)
+        svg.call(zoom)
     }
 }

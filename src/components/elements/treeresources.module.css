@@ -1,0 +1,23 @@
+.sidebar-resources{
+    display: grid;
+    grid-template-rows: 0.25fr 2fr;
+    gap: 1rem;
+  }
+  .resources-title{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .resources-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .resources-links a{
+    align-self: start;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .resources-links a:hover{
+    color: #999999
+  }

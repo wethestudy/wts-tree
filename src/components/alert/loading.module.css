@@ -1,0 +1,8 @@
+.loading-message{
+    display: flex;
+    justify-content: center;
+}
+.loading-link{
+    color: black;
+    text-decoration: underline;
+}

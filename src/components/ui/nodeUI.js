@@ -100,7 +100,13 @@ export const nodeUI = {
   },
   fillByCode: (node) => {
     let color
-    let checkedValue = d3.select('input[name="color"]:checked').node().value
+    let checkedValue
+    try{
+      // Check if view is "default"
+      checkedValue = d3.select('input[name="color"]:checked').node().value
+    } catch {
+      checkedValue = null
+    }
     switch(checkedValue){
       case "category":
         color = nodeUI.fillCategory(node.data.category);
@@ -117,10 +123,13 @@ export const nodeUI = {
     }
     return color
   },
-  fillNode: (node, completedArticlesID) => {
+  fillNode: (node, completedArticlesID, masteredArticlesID) => {
     let color = nodeUI.fillByCode(node);
     if (completedArticlesID.includes(node.data.id)){
       color = nodeUI.nodeProperties.completedColor;
+    }
+    if (masteredArticlesID.includes(node.data.id)){
+      color = nodeUI.nodeProperties.masteredColor;
     }
     return color
   },
@@ -130,7 +139,7 @@ export const nodeUI = {
   opacityActive: ()=>{
     return nodeUI.nodeProperties.activeOpacity;
   },
-  opacityNode: (node, completedArticlesID, activate) => {
+  opacityNode: (node, completedArticlesID, masteredArticlesID, activate) => {
     let opacity = nodeUI.defOpacity();
     if (activate) {
       opacity = nodeUI.opacityActive()
@@ -138,6 +147,13 @@ export const nodeUI = {
     if (completedArticlesID.includes(node.data.id)){
       opacity = nodeUI.nodeProperties.completedOpacity;
     }
+    if (masteredArticlesID.includes(node.data.id)){
+      opacity = nodeUI.nodeProperties.masteredOpacity;
+    }
     return opacity
+  },
+  strokeFill: (node, selectedTrack)=>{
+    if(selectedTrack.fields["Nodes"].includes(node.data.id)) {return '#B59D69'}
+    return "transparent"
   }
 };

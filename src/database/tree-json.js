@@ -22,7 +22,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec01WMpgA0BKWqtG"
     }
   },
@@ -50,7 +56,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "rec0bh6y3ggaHIUJb"
     }
   },
@@ -83,7 +96,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec0gOJox3OGpXzTF"
     }
   },
@@ -116,7 +136,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec14W03Sx9TmmYag"
     }
   },
@@ -146,7 +173,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec15nZj71Qa6UvVa"
     }
   },
@@ -171,7 +205,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec1TacTSSrRdvKIp"
     }
   },
@@ -198,7 +239,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Fluid Mechanics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec2TbORQ3BiAKkbb"
     }
   },
@@ -220,7 +265,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "rec2sOH5hibVRSuBg"
     }
   },
@@ -251,7 +303,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:14.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec2tENApTjs7PjKp"
     }
   },
@@ -276,7 +335,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec3A2czYMVYOhblZ"
     }
   },
@@ -302,7 +368,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T10:31:40.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec3R5fKLUaXBO1Nb"
     }
   },
@@ -329,7 +402,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec3UxyMlImgxTUxt"
     }
   },
@@ -360,7 +439,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec3qK3cct95CsuX1"
     }
   },
@@ -388,7 +474,11 @@ const database = [
       "Item ID": "64834afed4dc09048cf290f1",
       "State": "Active",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec3tmvmg2CU7fAOh"
     }
   },
@@ -419,7 +509,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec45eAk7qieXpK0Q"
     }
   },
@@ -450,7 +547,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec46n0JQr6qHOLqN"
     }
   },
@@ -481,7 +585,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec4OtOiF4IWFYL4o"
     }
   },
@@ -513,7 +624,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec4nqImwRDdSYoJ2"
     }
   },
@@ -543,7 +661,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec4pTshq7HgummR1"
     }
   },
@@ -565,7 +690,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Kinetics",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:40:23.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec5Azd2LMy3JNWly"
     }
   },
@@ -594,7 +723,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recyT5SjHhEQq1Zvs"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec5Iu355VQqvY04d"
     }
   },
@@ -627,7 +763,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec5cuqItzIZs9N14"
     }
   },
@@ -657,7 +800,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:39:58.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec5k97PC5z0lYU65"
     }
   },
@@ -686,7 +833,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec61Q3yfHE5UZcez"
     }
   },
@@ -713,7 +864,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec6GLYhVt6GlyZlg"
     }
   },
@@ -740,7 +897,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec6pYABydUtZPdtR"
     }
   },
@@ -765,7 +929,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Work and Energy",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec6rksCqoIitaY2C"
     }
   },
@@ -794,8 +962,14 @@ const database = [
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec6yl9U1JMzrVrqK"
     }
   },
@@ -823,7 +997,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec7FXxf1tOHktxeO"
     }
   },
@@ -849,7 +1030,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:14.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recyT5SjHhEQq1Zvs"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rec7T99TpcQy7UPcm"
     }
   },
@@ -880,7 +1068,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec8JA1707i7en06Q"
     }
   },
@@ -909,7 +1104,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec8cAnazv7cLsrNb"
     }
   },
@@ -936,7 +1138,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec8nAtR4JCCghVX4"
     }
   },
@@ -970,7 +1179,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec9Opg7uUaNVG6f3"
     }
   },
@@ -995,7 +1211,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rec9qyDQYiWy3KeSG"
     }
   },
@@ -1021,7 +1241,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T11:40:56.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recAC4hpBh0SuCsY4"
     }
   },
@@ -1050,7 +1274,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:39:49.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recAg3722hqd9AASR"
     }
   },
@@ -1077,7 +1305,11 @@ const database = [
       "Item ID": "6481dbb54fa9fce1bebe179f",
       "State": "Active",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:11.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recBnUfj7qa7V0vbo"
     }
   },
@@ -1104,7 +1336,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recBsDgA57xdOlHPN"
     }
   },
@@ -1135,7 +1373,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recCNelNosYyMEANO"
     }
   },
@@ -1160,7 +1405,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recDF1qp9BrKSO9D0"
     }
   },
@@ -1188,7 +1437,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:44:36.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recDHDE6XpgRUV8Ul"
     }
   },
@@ -1216,7 +1469,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recDNNRS4bqMf5vRs"
     }
   },
@@ -1248,7 +1508,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recDUE77g8h89SITp"
     }
   },
@@ -1273,7 +1537,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recDvaucwU6gdAiyh"
     }
   },
@@ -1299,7 +1570,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recE5Id3SkwtdJ03L"
     }
   },
@@ -1328,8 +1606,14 @@ const database = [
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recEBLgy4lj1HXON1"
     }
   },
@@ -1354,7 +1638,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recyT5SjHhEQq1Zvs"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recEFXbRrJv1l0pWy"
     }
   },
@@ -1381,8 +1672,14 @@ const database = [
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recEOlxaAbIukNhqv"
     }
   },
@@ -1414,7 +1711,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recES3gDB32VysGf1"
     }
   },
@@ -1440,7 +1744,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recEWWXTJOBhKVnth"
     }
   },
@@ -1470,7 +1781,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recEbA029mSizInxp"
     }
   },
@@ -1498,7 +1813,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recFPtN5M56B7X2eV"
     }
   },
@@ -1528,7 +1850,11 @@ const database = [
       "Item ID": "6481c7d298ae21530392ed25",
       "State": "Active",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:50:07.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recFiTVmGLYdmbY9a"
     }
   },
@@ -1559,7 +1885,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:04.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recFnOVAj5Jzh7pu9"
     }
   },
@@ -1589,7 +1922,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recGeLLEBy3zPr8CT"
     }
   },
@@ -1616,7 +1956,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recGk3QAV81FDz69h"
     }
   },
@@ -1649,7 +1996,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recHfdFYypTba3Sv9"
     }
   },
@@ -1678,7 +2032,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Trigonometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:11.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recHnKaQsDKKR9prS"
     }
   },
@@ -1702,7 +2060,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recHxOlq9EBE5CDtJ"
     }
   },
@@ -1731,7 +2095,11 @@ const database = [
       "Item ID": "6481d87e1b0674b9755a87e5",
       "State": "Active",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T11:48:26.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recI5o5BhPgdVuhRn"
     }
   },
@@ -1758,7 +2126,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recIDCVNtjegqyrT4"
     }
   },
@@ -1783,7 +2158,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recIPXTkMNohMxZQC"
     }
   },
@@ -1813,7 +2195,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recIaGLwn69Un34Uy"
     }
   },
@@ -1838,7 +2227,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recInVP5uHEWCbIWg"
     }
   },
@@ -1866,7 +2262,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recItbtoinRGHKqsJ"
     }
   },
@@ -1892,7 +2295,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recJiD3CzMjjFQLNw"
     }
   },
@@ -1918,8 +2325,14 @@ const database = [
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recKJ7ITqCP4NORD0"
     }
   },
@@ -1949,7 +2362,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T11:47:56.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recKVtNXqxjiIDU3l"
     }
   },
@@ -1981,7 +2401,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recLTb1H0znUGbrn2"
     }
   },
@@ -2014,7 +2441,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recLWJnaiwLjqzACi"
     }
   },
@@ -2049,7 +2483,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recLZlhqda5wasEh1"
     }
   },
@@ -2071,7 +2511,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recLtbOqubkfRmjjH"
     }
   },
@@ -2101,8 +2548,14 @@ const database = [
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recLuBaVQKYdYaJwV"
     }
   },
@@ -2128,7 +2581,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recLxnnuxYuXOjDAa"
     }
   },
@@ -2157,7 +2617,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recMbQNWYKLGXnoep"
     }
   },
@@ -2185,7 +2652,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recMh3cbrBUJbbNgL"
     }
   },
@@ -2217,7 +2691,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recMwIVQMeZFV0Uy2"
     }
   },
@@ -2244,7 +2725,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recN1mK5Gf7AbmKBJ"
     }
   },
@@ -2270,7 +2758,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:12.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recNDXO7pnC8Tun42"
     }
   },
@@ -2296,7 +2791,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recNE73jnGO9LlvTZ"
     }
   },
@@ -2326,7 +2828,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recNGXnNcJOyCi834"
     }
   },
@@ -2352,7 +2861,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recNJYE5Kg4zCOuJK"
     }
   },
@@ -2380,7 +2896,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recNdgh0SC60zwduh"
     }
   },
@@ -2402,7 +2922,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Strength of Materials",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recNfjwHsuglpzJXR"
     }
   },
@@ -2431,7 +2955,11 @@ const database = [
       "Item ID": "6481d867f808225f61547122",
       "State": "Active",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:11.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recOio904lvegA5Ls"
     }
   },
@@ -2461,7 +2989,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recOkEydoI3HcE9lx"
     }
   },
@@ -2487,8 +3022,14 @@ const database = [
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recOsB7NfKvuPlUJe"
     }
   },
@@ -2520,7 +3061,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recOsTQ2yn3iMO2kB"
     }
   },
@@ -2551,8 +3099,14 @@ const database = [
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recOzjBpYXIUHuiNE"
     }
   },
@@ -2580,7 +3134,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recPG0futauieMIQ5"
     }
   },
@@ -2588,7 +3146,7 @@ const database = [
     "id": "recPaKwgSjDKKs2OK",
     "createdTime": "2023-06-24T14:21:49.000Z",
     "fields": {
-      "Name": "How to Intepret Conjugate Beam Results and Deflections?",
+      "Name": "How to Interpret Conjugate Beam Results and Deflections?",
       "Slug": "how-to-interpret-conjugate-beam-results-and-deflections",
       "Tree: Parent Post": [
         "recdKyaNWpwnirW8Y"
@@ -2607,7 +3165,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recPaKwgSjDKKs2OK"
     }
   },
@@ -2637,7 +3202,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recPm4hICXUAiaPSJ"
     }
   },
@@ -2664,7 +3236,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recQ6aDy2wQCGDlE6"
     }
   },
@@ -2693,8 +3272,14 @@ const database = [
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recQ8mRjl7tDRWGRh"
     }
   },
@@ -2726,7 +3311,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recQPHhAYFAW3WBR4"
     }
   },
@@ -2759,7 +3351,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recQYLiwHfnOWCLpg"
     }
   },
@@ -2786,7 +3385,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recQosmhQmV7zobeU"
     }
   },
@@ -2814,8 +3420,14 @@ const database = [
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recRW0BJbibJC5cgm"
     }
   },
@@ -2842,7 +3454,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recS8RKz4iogHQVlC"
     }
   },
@@ -2870,7 +3488,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Loads",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recwMquYsvF088qFE"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recSMcfXIExrOts9f"
     }
   },
@@ -2901,7 +3526,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recSR2D2shTMeNfqk"
     }
   },
@@ -2929,8 +3561,11 @@ const database = [
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recSWPgCcY58JfBRE"
     }
   },
@@ -2963,7 +3598,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recSfMcrxqCdo9mLX"
     }
   },
@@ -2994,7 +3636,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:40:04.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recTJTOlag5moRMAz"
     }
   },
@@ -3021,7 +3670,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recTZiWX515TCWTmK"
     }
   },
@@ -3051,7 +3706,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recTkoGgOOxJa9JTg"
     }
   },
@@ -3077,7 +3739,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recUlGLyP6pmIkkY6"
     }
   },
@@ -3110,7 +3779,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:43:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recUrTjPKnSBVvMXk"
     }
   },
@@ -3138,7 +3814,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Loads",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recwMquYsvF088qFE"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recUsiVVPvF5i3f6S"
     }
   },
@@ -3165,7 +3848,11 @@ const database = [
       "Item ID": "6481f412c27efa9064319e80",
       "State": "Active",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:50:01.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recV11cZHfUSnTZBK"
     }
   },
@@ -3190,7 +3877,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recVFJZLyOwTQZQ7C"
     }
   },
@@ -3218,7 +3912,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Trigonometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:11.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recVgrNJJhmGOXUhP"
     }
   },
@@ -3249,7 +3947,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recVluKkdGdtSDwKw"
     }
   },
@@ -3283,7 +3988,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recVnleU1MC7YARxo"
     }
   },
@@ -3310,7 +4022,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recVwQ4rWBnxzAFx8"
     }
   },
@@ -3338,8 +4057,14 @@ const database = [
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recWTNUQ6umrLeycN"
     }
   },
@@ -3374,7 +4099,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recWlH8DjqbUtsx6F"
     }
   },
@@ -3382,7 +4113,7 @@ const database = [
     "id": "recXg3q5obV8OUNPr",
     "createdTime": "2023-06-24T14:21:50.000Z",
     "fields": {
-      "Name": "How to Solve the Area of a Curve Using Integration?",
+      "Name": "How to Solve the Area Between Curves Using Integration?",
       "Slug": "how-to-solve-the-area-of-a-curve-using-integration",
       "Tree: Parent Post": [
         "recn3NcEV7JbR20vi"
@@ -3399,7 +4130,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recXg3q5obV8OUNPr"
     }
   },
@@ -3431,7 +4169,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recXxLMdboDGNm2QJ"
     }
   },
@@ -3456,7 +4201,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recYFslKbqPl33Lrl"
     }
   },
@@ -3483,7 +4235,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recYlWMz3XqsTVXWD"
     }
   },
@@ -3505,7 +4264,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Fluid Mechanics",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:40:32.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recYyELEDzDZAnhGV"
     }
   },
@@ -3531,7 +4294,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:10.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recZ7eQYVAUUX6thM"
     }
   },
@@ -3556,7 +4326,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recZBXi5i3xsNYBZS"
     }
   },
@@ -3590,7 +4367,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Loads",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recwMquYsvF088qFE"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recZLwB6pRypXoEqn"
     }
   },
@@ -3616,7 +4400,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recZqdDlL0J4JQ7ST"
     }
   },
@@ -3642,8 +4433,14 @@ const database = [
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recZvOQvxQFPfgG3c"
     }
   },
@@ -3671,7 +4468,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recaC4AWiJgH1bDxu"
     }
   },
@@ -3699,8 +4503,14 @@ const database = [
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recaJWFPui8Z5KaAC"
     }
   },
@@ -3728,7 +4538,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Loads",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:41:27.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recwMquYsvF088qFE"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recaKCKG3sfNHqvxB"
     }
   },
@@ -3753,7 +4570,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Strength of Materials",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recabe0jHoLdOwa5p"
     }
   },
@@ -3782,8 +4603,14 @@ const database = [
       "Organization: Topic": "Structural Loads",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recwMquYsvF088qFE"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recabrxf8eUisN21V"
     }
   },
@@ -3808,7 +4635,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recauW5UJpuPd7MN1"
     }
   },
@@ -3840,7 +4674,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recb85Va9yQs1SMFx"
     }
   },
@@ -3865,7 +4706,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recc8MzQG5zlZ7VBI"
     }
   },
@@ -3896,7 +4744,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Strength of Materials",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reccCcMTGsGY2Hgi8"
     }
   },
@@ -3930,7 +4782,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reccwD9HPgLQD9q00"
     }
   },
@@ -3960,7 +4819,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recd3lmW0jVcxyClW"
     }
   },
@@ -3986,8 +4852,14 @@ const database = [
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recyT5SjHhEQq1Zvs"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recdEKzOGKyvzMzKz"
     }
   },
@@ -4016,7 +4888,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recdI5WZVpXOpLZKE"
     }
   },
@@ -4053,7 +4932,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recdKyaNWpwnirW8Y"
     }
   },
@@ -4078,7 +4964,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recdaMdpYKA6qm89n"
     }
   },
@@ -4108,7 +5001,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:45:34.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recdrFdqlGhCJ5CmQ"
     }
   },
@@ -4142,7 +5042,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T06:17:48.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recdvvUmpqkPr9VLA"
     }
   },
@@ -4167,7 +5071,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Strength of Materials",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recdwqIRm0mh95fs0"
     }
   },
@@ -4198,7 +5106,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recdyw7GvBujike7k"
     }
   },
@@ -4228,7 +5143,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T11:47:57.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recePfQ2Zp0nxNJjV"
     }
   },
@@ -4254,7 +5176,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "receR3QWJziq79jYm"
     }
   },
@@ -4281,7 +5210,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recevAHgPmwv7rNm1"
     }
   },
@@ -4309,7 +5245,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recf15vYZV9wehFAx"
     }
   },
@@ -4341,7 +5284,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structure",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recfF9q9K81oRJ1Ev"
     }
   },
@@ -4366,7 +5313,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Work and Energy",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:49:17.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recfQNxGWia0yQM7g"
     }
   },
@@ -4395,8 +5346,14 @@ const database = [
       "Organization: Topic": "Structural Loads",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recwMquYsvF088qFE"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recfoTRCAbGQhcT6o"
     }
   },
@@ -4422,7 +5379,14 @@ const database = [
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recg7ioFXWNMFHYjJ"
     }
   },
@@ -4449,7 +5413,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recgTlwnFSEZN8AVT"
     }
   },
@@ -4479,7 +5450,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Guide",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recgd6Q0YvJPUXtxy"
     }
   },
@@ -4512,7 +5487,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recgmK7kf3ke7ufdP"
     }
   },
@@ -4540,7 +5522,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rech2jAP8V7MaHb60"
     }
   },
@@ -4571,7 +5560,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:46:08.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "rech7VxE231YP6TMl"
     }
   },
@@ -4596,7 +5592,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T10:30:38.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recyT5SjHhEQq1Zvs"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rechNTAYHib2WjS0m"
     }
   },
@@ -4626,7 +5629,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rechNtjUxTVcHmFMT"
     }
   },
@@ -4654,7 +5664,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rechUEV8mTQqcSxjj"
     }
   },
@@ -4681,7 +5698,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rechcyyNzsaK6dp6w"
     }
   },
@@ -4703,7 +5726,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Algebra",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "rechkAJ8g2Ok5UZR0"
     }
   },
@@ -4731,7 +5758,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "rechwpC1c0dSB5LhX"
     }
   },
@@ -4759,8 +5793,14 @@ const database = [
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "reciBOyzrXyNtazrD"
     }
   },
@@ -4789,7 +5829,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reciCW7goqgOc0WHu"
     }
   },
@@ -4815,7 +5862,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:45:15.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reciO3hl4g2FB2Y06"
     }
   },
@@ -4843,7 +5894,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reciaylm9cHjPiUUR"
     }
   },
@@ -4878,7 +5936,13 @@ const database = [
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
       "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recibzkYaCLAoySfv"
     }
   },
@@ -4905,8 +5969,14 @@ const database = [
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "reciteWgQ8kaiecEl"
     }
   },
@@ -4931,7 +6001,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recjI4H7282MXY9EZ"
     }
   },
@@ -4957,7 +6034,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reckcCcRja7qNfzbD"
     }
   },
@@ -4982,7 +6063,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Differential Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reclbSH8KLrUloxaO"
     }
   },
@@ -5014,7 +6099,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:11.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "reclu91SFS4MXS0dW"
     }
   },
@@ -5047,7 +6136,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:04.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recmaiXD2wjuhYExE"
     }
   },
@@ -5061,6 +6154,11 @@ const database = [
         "recmaiXD2wjuhYExE"
       ],
       "Tree: Name": "Introduction",
+      "Tree: Sibling Posts": [
+        "reclu91SFS4MXS0dW",
+        "recdvvUmpqkPr9VLA",
+        "recFnOVAj5Jzh7pu9"
+      ],
       "Organization: Category": "Engineering",
       "Organization: Sibling Order": 1,
       "Organization: Subcategory": "Structural Engineering",
@@ -5069,13 +6167,12 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T06:17:46.000Z",
-      "Airtable ID": "recmcAjSkLB4iSk2S",
-      "Tree: Sibling Posts": [
-        "reclu91SFS4MXS0dW",
-        "recdvvUmpqkPr9VLA",
-        "recFnOVAj5Jzh7pu9"
-      ]
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recmcAjSkLB4iSk2S"
     }
   },
   {
@@ -5104,7 +6201,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recn3NcEV7JbR20vi"
     }
   },
@@ -5129,7 +6233,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recn9dZIBIKhdNycB"
     }
   },
@@ -5150,7 +6261,11 @@ const database = [
       "Item ID": "648d8632bbae7004f15a4942",
       "State": "Active",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:03.000Z",
       "Airtable ID": "recnIlyWU7T5WrLn5"
     }
   },
@@ -5179,8 +6294,14 @@ const database = [
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recnUYsEBO0K7Kb6B"
     }
   },
@@ -5208,7 +6329,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
       "Airtable ID": "recnUvDePj7m9c4Z5"
     }
   },
@@ -5243,7 +6371,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recnVObn1zC9Her1c"
     }
   },
@@ -5279,7 +6414,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recndOqYjMpWQyFTD"
     }
   },
@@ -5310,7 +6452,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recoeDE0cGtWl0Kn9"
     }
   },
@@ -5336,7 +6485,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recogNWkcjCALAAJl"
     }
   },
@@ -5361,7 +6514,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recoi7UJD8XAGhhgg"
     }
   },
@@ -5387,7 +6547,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T06:17:48.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "reconRJ15nWVA3rzT"
     }
   },
@@ -5420,7 +6587,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recpHF8Cg89Vuh9a7"
     }
   },
@@ -5446,7 +6620,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:11.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
       "Airtable ID": "recpMuLYQFEXmfUGu"
     }
   },
@@ -5477,7 +6658,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Kinetics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recpVIeFvijXdILrW"
     }
   },
@@ -5508,7 +6693,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Work and Energy",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:04.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recpYqm8AcNw6d2CX"
     }
   },
@@ -5537,7 +6726,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Fluid Mechanics",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T11:41:03.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recpvuIWanlCWE4Ex"
     }
   },
@@ -5562,7 +6755,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recpz2spSbolENrhk"
     }
   },
@@ -5590,7 +6790,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recq5RCfsRMz25zsB"
     }
   },
@@ -5618,7 +6825,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recqA5WOvf1AwDPWx"
     }
   },
@@ -5649,7 +6860,14 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recqcQbwd6FJSb7jg"
     }
   },
@@ -5677,7 +6895,11 @@ const database = [
       "State": "Active",
       "Organization: Topic": "Algebra",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:11.000Z",
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recqeDeFSyas3vchl"
     }
   },
@@ -5700,8 +6922,11 @@ const database = [
       "Organization: Topic": "Trigonometry",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:52.000Z",
+      "Organization: Post Type": "Guide",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
       "Airtable ID": "recqu8w73XCiia7uB"
     }
   },
@@ -5726,10 +6951,17 @@ const database = [
       "SEO: Post Summary": "When analyzing, the first thing to do is analyze its stability - the structure's ability to retain rigidity and shape when applied with external loads.",
       "Item ID": "647de026284342c55be1132f",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recr13UJa8DvT8mkZ",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "recr13UJa8DvT8mkZ"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5753,10 +6985,17 @@ const database = [
       "SEO: Post Summary": "Integration is the process of finding the whole from many parts. In this post, we'll explore the definite integral and how it fits in solving real-life problems.",
       "Item ID": "647dd04e06246eacecffda82",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recr3u3RSVdoqFNrl",
       "Organization: Topic": "Integral Calculus",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
-      "Airtable ID": "recr3u3RSVdoqFNrl"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recjrMbu7V7jM6iPd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5781,10 +7020,14 @@ const database = [
       "SEO: Post Summary": "The analysis would also depend on the load, which can either be static or dynamic. Static loads do not generate acceleration effects on the structure, while dynamic does.",
       "Item ID": "647de02d1fdc7fdae7b03227",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recrcpJXNQWXx4VQs",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "recrcpJXNQWXx4VQs"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5808,12 +7051,15 @@ const database = [
       "SEO: Post Summary": "This post shows the derivation of the model between two motion variables, position and time, of an object experiencing free-fall motion with drag resistance.",
       "Item ID": "647df039fee2fae11d1d378f",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recsR7EvnstwxFDWV",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "recsR7EvnstwxFDWV"
+      "Organization: Post Type": "Guide",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5840,10 +7086,17 @@ const database = [
       "SEO: Post Summary": "This series of posts shows how to apply the different structural concepts and theories in analyzing structures. It serves as an illustration of how to analyze structures.",
       "Item ID": "64831aec2ca17ef308fd043f",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recsjEmwRv84joHlf",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
-      "Airtable ID": "recsjEmwRv84joHlf"
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5871,10 +7124,14 @@ const database = [
       "SEO: Post Summary": "Kinematics is a subfield of Mechanics that deals with the motion of matter without considering the force affecting it. In this field, we deal with ideas like distance, speed, acceleration, and more.",
       "Item ID": "64834b17a2b9e0bf8e0f1279",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recsltluReqUJhLiI",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
-      "Airtable ID": "recsltluReqUJhLiI"
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5898,10 +7155,17 @@ const database = [
       "SEO: Post Summary": "The separation of variables is an analytic approach to finding a solution to a differential equation. It involves separating like-variables and differentials to each side of the equation.",
       "Item ID": "647dd045f09983ecda4860d0",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recsupTLt6yVHzmBM",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
-      "Airtable ID": "recsupTLt6yVHzmBM"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5930,10 +7194,17 @@ const database = [
       "SEO: Post Summary": "Let's consider the example of how to analyze pin-connected frames. We'll explore its stability, reaction analysis of its supports, and internal force analysis of every member.",
       "Item ID": "647de02bd5fade0e9d3bdf6b",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "rectJopYHKsq6uzf9",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "rectJopYHKsq6uzf9"
+      "Organization: Post Type": "Example",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5958,10 +7229,17 @@ const database = [
       "SEO: Post Summary": "The point of zero moment is the position along the beam in which the moment is zero. Let's explore different ways to calculate this position using functions or graphs.",
       "Item ID": "647de02c155d0a94f9a17fce",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "rectnuMdhNyazti7w",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "rectnuMdhNyazti7w"
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -5983,10 +7261,17 @@ const database = [
       "SEO: Post Summary": "There are many beam patterns one may encounter in the real-world such as simple, fixed, cantilever, propped, etc. This post shows a brief overview of these.",
       "Item ID": "647de02274fe97b977097bc5",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
+      "Airtable ID": "rectwk8Mn2Lgir8Yk",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
-      "Airtable ID": "rectwk8Mn2Lgir8Yk"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6011,10 +7296,17 @@ const database = [
       "SEO: Post Summary": "We can place one mathematical function to another to form composite functions. This results in a new expression depending on the phenomenon being modeled.",
       "Item ID": "647dd04537101ce399a6fa2d",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recu1GZ7Err23mN86",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
-      "Airtable ID": "recu1GZ7Err23mN86"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6038,12 +7330,15 @@ const database = [
       "SEO: Post Summary": "This post shows the derivation of the model between two motion variables, acceleration and time, of an object experiencing free-fall motion with drag resistance.",
       "Item ID": "647df039a7a197d4883d1793",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recu8qYF1EOkoBzZe",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "recu8qYF1EOkoBzZe"
+      "Organization: Post Type": "Guide",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6067,12 +7362,18 @@ const database = [
       "SEO: Post Summary": "Newton's Law of Cooling states that how fast an object cools over a period is proportional to the difference between the temperature of the object and its surroundings.",
       "Item ID": "647dd04c6c6c83d632e64773",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recuFh4sciHUZfrsh",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:52.000Z",
-      "Airtable ID": "recuFh4sciHUZfrsh"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6095,10 +7396,17 @@ const database = [
       "SEO: Post Summary": "The method of sections is a procedure we use in truss analysis and is one of the two essential solutions to solve the internal forces of any truss structure.",
       "Item ID": "647de0294b8fd164bb19c326",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recuKVUODsUQHUCzb",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "recuKVUODsUQHUCzb"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6123,10 +7431,17 @@ const database = [
       "SEO: Post Summary": "In this series of posts, we'll explore how to solve our frame example's internal force and stresses using various methods and techniques - another essential requirement for analysis.",
       "Item ID": "6483476ef00f5c9c4a9468b2",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recuM4u6lOkBwfZ4n",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
-      "Airtable ID": "recuM4u6lOkBwfZ4n"
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6153,12 +7468,18 @@ const database = [
       "SEO: Post Summary": "The structural frame is a structure composed of members connected by joints. The members experience all sorts of stresses while the joints are rigid but may be semi-rigid or flexible.",
       "Item ID": "647de026dcce73e5a00f547f",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
+      "Airtable ID": "recvMpeeKHQfw2uks",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T09:23:56.000Z",
-      "Airtable ID": "recvMpeeKHQfw2uks"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6181,10 +7502,14 @@ const database = [
       "SEO: Post Summary": "Fluid pressure is the continuous physical force a body experiences when submerged in a fluid. Mathematically, it is the perpendicularly-applied force per unit area.",
       "Item ID": "647df039e07ae8754f9b92b5",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recvN3tkSOmWOMhIE",
       "Organization: Topic": "Fluid Mechanics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "recvN3tkSOmWOMhIE"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6212,10 +7537,14 @@ const database = [
       "SEO: Post Summary": "Fluid mechanics deals with studying fluid matter, such as liquids and gases. In this subfield, we'll explore the properties of fluid and concepts like pressure, to name a few.",
       "Item ID": "64834b66d0ac7cc1c445b5ae",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recvVSVJ6AfjFGsAq",
       "Organization: Topic": "Fluid Mechanics",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:49:37.000Z",
-      "Airtable ID": "recvVSVJ6AfjFGsAq"
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6239,12 +7568,18 @@ const database = [
       "SEO: Post Summary": "Many of the world's phenomena can be represented by growth and decay. We can do this by representing the factors of the event using a differential equation.",
       "Item ID": "647dd04acc2c48ea96ac077f",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recvbQDhEVGD8aALx",
       "Organization: Topic": "Differential Equations",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:53.000Z",
-      "Airtable ID": "recvbQDhEVGD8aALx"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAfXEx9a47fAAAt"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6268,10 +7603,14 @@ const database = [
       "SEO: Post Summary": "This post shows the derivation of the model between two motion variables, velocity and time, of an object experiencing free-fall motion with simple resistance.",
       "Item ID": "647df039b5ec82777b15e83c",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recvcvJgOSKkGfwuk",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "recvcvJgOSKkGfwuk"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6293,10 +7632,17 @@ const database = [
       "SEO: Post Summary": "With slope and translation equations constructed, let's use these expressions to illustrate how to find the deflection at any point of our beam example.",
       "Item ID": "647de024a265b901d31372e6",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recvcw1W8UJKVKjuy",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
-      "Airtable ID": "recvcw1W8UJKVKjuy"
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6319,17 +7665,24 @@ const database = [
       "SEO: Post Summary": "The ellipse is a conic section in which its locus is the set of all points in which the sum of its distances from two unique points (foci) is constant. ",
       "Item ID": "647dd047284342c55bd00488",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recvmRsviSlXKtk6G",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:53.000Z",
-      "Airtable ID": "recvmRsviSlXKtk6G"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
     "id": "recvo4DhGOuRDWeK6",
     "createdTime": "2023-06-24T14:21:49.000Z",
     "fields": {
-      "Name": "What are Compatibility Conditions",
+      "Name": "What are Compatibility Conditions?",
       "Slug": "what-are-compatibility-conditions",
       "Tree: Parent Post": [
         "reclu91SFS4MXS0dW"
@@ -6348,10 +7701,14 @@ const database = [
       "SEO: Post Summary": "Compatibility refers to the balance between the structure's deflected shape and the effect of structural loads imposed on it. There must be a reasonable cause-and-effect relationship between the two.",
       "Item ID": "647de023b781b9c819f72e8b",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recvo4DhGOuRDWeK6",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
-      "Airtable ID": "recvo4DhGOuRDWeK6"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6375,10 +7732,17 @@ const database = [
       "SEO: Post Summary": "We can analyze a structure using work and energy principles. It's a powerful alternative that helps us see analysis in a new light and expand our methods.",
       "Item ID": "647de033554df71a26f04ff3",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recw53t2JbZvVnpJZ",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "recw53t2JbZvVnpJZ"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6403,9 +7767,13 @@ const database = [
       "SEO: Post Summary": "Physics is a broad field of study - it is the study of matter and the natural forces and laws that affect it. It also includes its motion and composition at the particle level. It's one of the fundamental science that aims to understand how the universe works.",
       "Item ID": "64834ab6d210b5fccf3b0a87",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recwRJDvFSildKAs9",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:11.000Z",
-      "Airtable ID": "recwRJDvFSildKAs9"
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6432,9 +7800,13 @@ const database = [
       "SEO: Post Summary": "Structures deal with the components that we use to solve problems. We'll learn how to manipulate values through algebra and create expressions using functions.",
       "Item ID": "6481d8985a1b6affccdbaad1",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recxEHPDGAi3pZLzn",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:50:04.000Z",
-      "Airtable ID": "recxEHPDGAi3pZLzn"
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6460,12 +7832,18 @@ const database = [
       "SEO: Post Summary": "In this post, let's explore how to analyze a beam example using work and energy principles. Using this method, we'll illustrate how to solve for reactions, shear, and moment.",
       "Item ID": "647de0330764a3c4103675f9",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recxFJi5DX8EV7WWr",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "recxFJi5DX8EV7WWr"
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6492,10 +7870,17 @@ const database = [
       "SEO: Post Summary": "This post serves as an introduction to real work methods. Unlike virtual work, it uses actual forces and displacements to find translations and rotations.",
       "Item ID": "647de02bdcce73e5a00f5921",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recxN8xumxCdhF7KM",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "recxN8xumxCdhF7KM"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6517,10 +7902,14 @@ const database = [
       "SEO: Post Summary": "The right triangle is a triangle in which one of its angles is a right angle (90 degrees). It serves as a perfect introduction to the world of trigonometry.",
       "Item ID": "647dd04e32a6285c0377e0b1",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recxg0TZ22hQ3HyRl",
       "Organization: Topic": "Trigonometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:52.000Z",
-      "Airtable ID": "recxg0TZ22hQ3HyRl"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6542,10 +7931,14 @@ const database = [
       "SEO: Post Summary": "Motion is a fundamental concept in Kinematics that describe the movement of matter. We'll explore topics such as speed, velocity, and acceleration to name a few.",
       "Item ID": "64834b805554299011e7050d",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recxrOGNWipPYSt8x",
       "Organization: Topic": "Kinematics",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:49:32.000Z",
-      "Airtable ID": "recxrOGNWipPYSt8x"
+      "Organization: Post Type": "Crossroad",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6572,10 +7965,17 @@ const database = [
       "SEO: Post Summary": "Relations and functions are essential structures we use to model the real world. Start here and explore one of the most important topics in Mathematics.",
       "Item ID": "6481ca99b442019656186cec",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recxvW2R2r5g491G9",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:11.000Z",
-      "Airtable ID": "recxvW2R2r5g491G9"
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6604,10 +8004,17 @@ const database = [
       "SEO: Post Summary": "This is an example of a complex truss analysis. We will explore its stability, the amount of force carried by its supports, and the internal forces of each member. ",
       "Item ID": "647de023db0e40779abb913d",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recxvySqJ68aNUY2C",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:12.000Z",
-      "Airtable ID": "recxvySqJ68aNUY2C"
+      "Organization: Post Type": "Guide",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6632,10 +8039,17 @@ const database = [
       "SEO: Post Summary": "Analytic Geometry is a subfield of geometry that deals with space in a coordinate system. It allows us to represent geometric figures using Mathematical expressions.",
       "Item ID": "6481c517ebfcd096729dd168",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recyNMwN5vBWDm1Wn",
       "Organization: Topic": "Analytic Geometry",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:32:12.000Z",
-      "Airtable ID": "recyNMwN5vBWDm1Wn"
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "rec3k4Mu0bNBE1gqd"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6661,10 +8075,14 @@ const database = [
       "SEO: Post Summary": "A body submerged in a fluid will experience fluid pressure. The equivalent resultant force of such pressure is what we call the fluid force. Let's explore this concept.",
       "Item ID": "647df03a915b951dc9ac7d6d",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recylTqLMQQJIPFgw",
       "Organization: Topic": "Fluid Mechanics",
       "Article: Revision": 1,
-      "Last Modified": "2023-08-26T08:40:29.000Z",
-      "Airtable ID": "recylTqLMQQJIPFgw"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6693,10 +8111,17 @@ const database = [
       "SEO: Post Summary": "This post serves as an introduction to the different ways how to compute for the deflection of various structures. We explore methods such as the double integration method, work methods, and more.",
       "Item ID": "648335341b63be0f500e5af7",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recysej3plsOBDHsX",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:45.000Z",
-      "Airtable ID": "recysej3plsOBDHsX"
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6726,10 +8151,17 @@ const database = [
       "SEO: Post Summary": "This series of posts shows how we construct mathematical functions. We explore concepts like notation, domain, range, and approaches, to name a few.",
       "Item ID": "647dd0469341c2d4046d5513",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:21.000Z",
+      "Airtable ID": "recz0XAKWnXf3rqPr",
       "Organization: Topic": "Relations and Functions",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-29T05:58:14.000Z",
-      "Airtable ID": "recz0XAKWnXf3rqPr"
+      "Organization: Post Type": "Crossroad",
+      "Tracks": [
+        "recvAGeu6W2P2F8dD"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6752,10 +8184,17 @@ const database = [
       "SEO: Post Summary": "The method of joints is a procedure we use in truss analysis and is one of the two essential solutions to solve the internal forces of any truss structure.",
       "Item ID": "647de0293014cdc0370354a5",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "recz9jOvPr145DpXI",
       "Organization: Topic": "Structural Analysis",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "recz9jOvPr145DpXI"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recAJPDyTiMpa4xtQ"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6777,10 +8216,14 @@ const database = [
       "SEO: Post Summary": "Pressure varies depending on the depth. Because of this, the fluid force acting on the object differs depending on the depth; hence, the computation for the total force will require integration.",
       "Item ID": "647df039b5ec82777b15e768",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "reczOBPN0sO5ROzq6",
       "Organization: Topic": "Fluid Mechanics",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:47.000Z",
-      "Airtable ID": "reczOBPN0sO5ROzq6"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6803,12 +8246,15 @@ const database = [
       "SEO: Post Summary": "We can break the design of civil structures into several stages: (1) modeling, (2) load analysis, (3) structural analysis, and (4) design. Let's explore a basic overview of each stage.",
       "Item ID": "647de027e46ea344f0872f4d",
       "State": "Active",
+      "Last Modified": "2024-01-23T08:53:27.000Z",
+      "Airtable ID": "reczqdqAtV4D6HtRg",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
       "Article: Is Paid Content?": true,
-      "Organization: Post Type": "Example",
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "reczqdqAtV4D6HtRg"
+      "Organization: Post Type": "Concept",
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   },
   {
@@ -6830,10 +8276,17 @@ const database = [
       "SEO: Post Summary": "Longitudinal properties of structural members refer to properties that run along their whole length. Examples of these include its extrusion path and uniformity.",
       "Item ID": "647de02854b50a794f07a4e4",
       "State": "Active",
+      "Last Modified": "2024-02-10T07:58:19.000Z",
+      "Airtable ID": "reczrDKRD2XRwFxl2",
       "Organization: Topic": "Structural Modeling",
       "Article: Revision": 1,
-      "Last Modified": "2023-12-28T15:33:49.000Z",
-      "Airtable ID": "reczrDKRD2XRwFxl2"
+      "Organization: Post Type": "Concept",
+      "Tracks": [
+        "recU6E7VRWfAQSm2o"
+      ],
+      "Passing Rate": 80,
+      "Number of Questions": 5,
+      "Post Types": "AB"
     }
   }
 ]

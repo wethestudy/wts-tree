@@ -1,0 +1,66 @@
+.certificate-wrapper{
+    background-color: #00000090;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.certificate-main-wrapper{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 0;
+}
+.bold{
+  font-weight: bold;
+}
+.section{
+  margin-bottom: 1rem;
+}
+.close-button{
+    /* position: fixed; */
+    font-size: 0.75rem;
+    /* top: 7rem; */
+    /* right: 6.5rem; */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b59d69;
+    border-radius: 20px;
+    border: 2px solid #b59d69;
+    height: 2rem;
+    line-height: 2rem;
+    transition: 0.3s;
+    pointer-events: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+  .close-button:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #57534e;
+    border-radius: 20px;
+    border: 2px solid #57534e;
+    height: 2rem;
+    line-height: 2rem;
+    pointer-events: auto;
+  }
+.iframe-scale{
+    scale: 0.75;
+}
+
+@media only screen and (max-width: 840px) {
+  .certificate-main-wrapper{
+    flex-direction: column;
+  }
+}

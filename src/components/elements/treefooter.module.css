@@ -1,0 +1,36 @@
+.sidebar-footer{
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr;
+    gap: 0.25rem;
+  }
+.footer-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-wrapper div{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-wrapper div:hover{
+  color: #999999
+}
+.footer-wrapper a{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-wrapper a:hover{
+  color: #999999
+}
+.sidebar-footer p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 840px) {
+  .tutorial-link{
+    display: none;
+  }
+}

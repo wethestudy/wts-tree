@@ -1,8 +1,9 @@
 import * as d3 from "d3";
-import { nodeFunctions } from "../utilities/nodeFunctions";
+import { nodeFunctions } from "../utilities/nodeFunctions.js";
+import { UI } from "./UI.js";
 
-export const SidebarUI = {
-  constructSearch: (filteredResults, activeNode, completedArticlesID, camera)=>{
+export const DesktopUI = {
+  constructSearch: (filteredResults, activeNode, completedArticlesID, masteredArticlesID, camera, viewType, selectedTrack)=>{
     d3.select('#search-wrapper').style('visibility', 'visible')
     d3.select('#no-results').style('visibility', 'hidden')
     d3.select('#search-count')
@@ -12,7 +13,15 @@ export const SidebarUI = {
             let resultWrapper = d3.select('#search-results')
             let linkContainer = resultWrapper.append('a')
               .data(element)
-              .on("click", (event) => nodeFunctions.click(activeNode, element, completedArticlesID, camera))
+              .on("click", (event) => nodeFunctions.click(
+                activeNode, 
+                element, 
+                completedArticlesID, 
+                masteredArticlesID, 
+                camera, 
+                viewType,
+                selectedTrack
+              ))
             linkContainer.append('p')
               .attr('id', `search-category-${element.data.id}`)
               .text(element.data.category)
@@ -37,19 +46,9 @@ export const SidebarUI = {
     let searchTextArea = document.getElementById("search-input");
     searchTextArea.value = "";
   },
-  clearElement: (element)=>{
-    element.text("");
-    element.style('background-color', '#d7d3d0');
-  },
   resetCard: () => {
     let cardTitle = d3.select('#card-title');
-    cardTitle.text("Select a Tree Node");
-
     let cardBlock = d3.select('#card-block');
-    cardBlock.text("");
-    cardBlock.style('background-color', '#d7d3d0');
-    cardBlock.style('height', '2rem');
-
     let cardCategory = d3.select('#card-category');
     let cardSubcategory = d3.select('#card-subcategory');
     let cardTopic = d3.select('#card-topic');
@@ -59,13 +58,14 @@ export const SidebarUI = {
     let cardButton = d3.select('#card-button');
     let mobileCardButton = d3.select('#mobile-card-button');
 
-    SidebarUI.clearElement(cardCategory)
-    SidebarUI.clearElement(cardSubcategory)
-    SidebarUI.clearElement(cardTopic)
-    SidebarUI.clearElement(cardRevision)
-    SidebarUI.clearElement(cardOrder)
-    SidebarUI.clearElement(cardPostType)
-
+    cardTitle.text("Select a Tree Node");
+    UI.defaultBlock(cardBlock)
+    UI.defaultWrapper(cardCategory)
+    UI.defaultWrapper(cardSubcategory)
+    UI.defaultWrapper(cardTopic)
+    UI.defaultWrapper(cardRevision)
+    UI.defaultWrapper(cardOrder)
+    UI.defaultWrapper(cardPostType)
     cardButton.attr('href', "");
     mobileCardButton.attr('href', "");
   },
@@ -91,37 +91,37 @@ export const SidebarUI = {
       cardCategory.text(d.data.category);
       cardCategory.style('background-color', 'transparent');
     } else {
-      SidebarUI.clearElement(cardCategory)
+      UI.defaultWrapper(cardCategory)
     }
     if (d.data.subcategory) {
       cardSubcategory.text(d.data.subcategory);
       cardSubcategory.style('background-color', 'transparent');
     } else {
-      SidebarUI.clearElement(cardSubcategory)
+      UI.defaultWrapper(cardSubcategory)
     }
     if (d.data.topic) {
       cardTopic.text(d.data.topic);
       cardTopic.style('background-color', 'transparent');
     } else {
-      SidebarUI.clearElement(cardTopic)
+      UI.defaultWrapper(cardTopic)
     }
     if (d.data.revision) {
       cardRevision.text(d.data.revision);
       cardRevision.style('background-color', 'transparent');
     } else {
-      SidebarUI.clearElement(cardRevision)
+      UI.defaultWrapper(cardRevision)
     }
     if (d.data.siblingOrder) {
       cardOrder.text(d.data.siblingOrder);
       cardOrder.style('background-color', 'transparent');
     } else {
-      SidebarUI.clearElement(cardOrder)
+      UI.defaultWrapper(cardOrder)
     }
     if (d.data.posttype) {
       cardPostType.text(d.data.posttype);
       cardPostType.style('background-color', 'transparent');
     } else {
-      SidebarUI.clearElement(cardPostType)
+      UI.defaultWrapper(cardPostType)
     }
     if (d.data.link) {
       cardButton.attr('href', d.data.link);
@@ -131,8 +131,8 @@ export const SidebarUI = {
     }
   },
   clearUI: ()=>{
-    SidebarUI.hideSearch()
-    SidebarUI.clearSearch()
-    SidebarUI.resetCard()
+    DesktopUI.hideSearch()
+    DesktopUI.clearSearch()
+    DesktopUI.resetCard()
   },
 };

@@ -2,35 +2,35 @@ import * as d3 from "d3";
 import { nodeUI } from "./nodeUI";
 
 export const RadialTreeUI = {
-    colorNodes: (descendants, completedArticlesID, activeNode)=>{
+    colorNodes: (descendants, completedArticlesID, masteredArticlesID, activeNode)=>{
         d3.selectAll('#node-wrapper circle').nodes().forEach(node => {
             let id = d3.select(node).property('id').replace("circle-","")
             let nodeData = descendants.find(item=>item.id===id)
             d3.select(`#circle-${id}`)
-              .attr("fill", ()=>nodeUI.fillNode(nodeData, completedArticlesID))
-              .attr("opacity", ()=>nodeUI.opacityNode(nodeData, completedArticlesID, false))
+              .attr("fill", ()=>nodeUI.fillNode(nodeData, completedArticlesID, masteredArticlesID))
+              .attr("fill-opacity", ()=>nodeUI.opacityNode(nodeData, completedArticlesID, masteredArticlesID, false))
           });
         try{
             d3.select(activeNode.activeTag)
-              .attr("opacity", ()=>nodeUI.opacityNode(activeNode.activeElement, completedArticlesID, true))
+              .attr("fill-opacity", ()=>nodeUI.opacityNode(activeNode.activeElement, completedArticlesID, masteredArticlesID, true))
         } catch{
             return
         }
     },
-    activateActiveNode: (activeNode, completedArticlesID) => {
+    activateActiveNode: (activeNode, completedArticlesID, masteredArticlesID) => {
         activeNode.activeElement.data.lockHover = true;
         d3.select(activeNode.activeTag)
             .attr("r", nodeUI.nodeProperties.r * 3)
-            .attr("fill", ()=>nodeUI.fillNode(activeNode.activeElement, completedArticlesID))
-            .attr("opacity", ()=>nodeUI.opacityNode(activeNode.activeElement, completedArticlesID, true));
+            .attr("fill", ()=>nodeUI.fillNode(activeNode.activeElement, completedArticlesID, masteredArticlesID))
+            .attr("fill-opacity", ()=>nodeUI.opacityNode(activeNode.activeElement, completedArticlesID, masteredArticlesID, true));
     },
-    deactivateActiveNode: (activeNode, completedArticlesID) => {
+    deactivateActiveNode: (activeNode, completedArticlesID, masteredArticlesID) => {
         activeNode.activeElement.data.lockHover = false;
         d3.select(activeNode.activeTag)
             .transition()
             .attr("r", nodeUI.nodeProperties.r)
-            .attr("fill", ()=>nodeUI.fillNode(activeNode.activeElement, completedArticlesID))
-            .attr("opacity", ()=>nodeUI.opacityNode(activeNode.activeElement, completedArticlesID, false));
+            .attr("fill", ()=>nodeUI.fillNode(activeNode.activeElement, completedArticlesID, masteredArticlesID))
+            .attr("fill-opacity", ()=>nodeUI.opacityNode(activeNode.activeElement, completedArticlesID, masteredArticlesID, false));
     },
     displayConnections: (activeNode)=> {
         let isChecked = d3.select('#connections').node().checked;

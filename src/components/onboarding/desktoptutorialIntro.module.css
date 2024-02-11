@@ -1,0 +1,43 @@
+.onboardingIntro{
+    background-color: #00000090;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.onboardingIntro div{
+    width: 30rem;
+}
+.card-button{
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b59d69;
+    border-radius: 20px;
+    height: 2rem;
+    width: 10rem;
+    line-height: 2rem;
+    transition: 0.3s;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+.card-button:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #57534e;
+    border-radius: 20px;
+    height: 2rem;
+    line-height: 2rem;
+    pointer-events: auto;
+}

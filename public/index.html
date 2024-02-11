@@ -13,24 +13,33 @@
   <body>
     <div id="root"></div>
   </body>
-  <!-- <script>
+  <script>
     const intervalLocal = setInterval(()=>{
         document.addEventListener('memberData', function(event) {
             console.log('Event dispatched!');
             console.log('Event data:', event.detail);
             clearInterval(intervalLocal)
         });
-        let memberJson = {data:{
+        let customFields = {
+          "certificate-name": "Edgar Dirige",
+        }
+        let memberJSON = {data:{
         "completedArticlesID": [
             "receR3QWJziq79jYm",
             "rec45eAk7qieXpK0Q"
+        ],
+        "masteredArticlesID": [
+          "receR3QWJziq79jYm",
+          "recOsTQ2yn3iMO2kB",
         ]
         }};
-        document.dispatchEvent(new CustomEvent('memberData', { detail: memberJson}));
+        let view = {type: "default", parameters: {object: null}};
+        let dispatchOptions = {member: memberJSON, customFields: customFields, view: view}
+        document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions}));
     }, 5000)
 
     setTimeout(()=>{
         clearInterval(intervalLocal)
     }, 20000)
-  </script> -->
+  </script>
 </html>

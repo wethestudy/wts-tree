@@ -1,0 +1,33 @@
+.end-button{
+    position: fixed;
+    font-size: 0.75rem;
+    top: 7rem;
+    right: 6.5rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b59d69;
+    border-radius: 20px;
+    border: 2px solid #b59d69;
+    height: 2rem;
+    line-height: 2rem;
+    transition: 0.3s;
+    pointer-events: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: none;
+    cursor: pointer;
+  }
+  .end-button:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #57534e;
+    border-radius: 20px;
+    border: 2px solid #57534e;
+    height: 2rem;
+    line-height: 2rem;
+    pointer-events: auto;
+  }

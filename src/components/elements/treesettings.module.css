@@ -1,0 +1,143 @@
+.sidebar-settings{
+    display: grid;
+    grid-template-rows: 0.25fr 2fr;
+    gap: 1rem;
+}
+.settings-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.settings-wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+.settings-option-wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+}
+.settings-subheading{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper select::-ms-expand,
+.select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    padding-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.select-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.select-wrapper::after {
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-angle-circle-down.svg') no-repeat center;
+    background-size: contain;
+    filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(96%) contrast(89%);
+    width: 20px;
+    height: 20px;
+}
+.drop-field{
+    border: 2pt solid #999999;
+    height: 2.5rem;
+    border-radius: 20px;
+    font-family: 'Heebo', 'sans-serif';
+    padding-left: 1rem;
+    width: 100%;
+    vertical-align: middle;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+}
+.form-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 0.25rem;
+}
+.settings-tooltip-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    align-self: center;
+}
+/* Tooltip container */
+.tooltip {
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 10rem;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: left;
+    padding: 0.25rem 0.75rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    /* top: -5px; */
+    left: 105%;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.info-wrapper {
+    position: relative;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 10rem;
+    border: none;
+}
+.info-wrapper select::-ms-expand,
+.info-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    padding-right: 20px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+.info-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.info-wrapper::after {
+    background: url('https://raw.githubusercontent.com/wethestudy/wts-tree/main/src/assets/icons/fi-sr-add.svg') no-repeat center;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+}
+
+@media only screen and (max-width: 840px) {
+    .drop-field{
+        font-size: 16px;
+    }
+}

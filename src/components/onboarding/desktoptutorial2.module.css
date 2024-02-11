@@ -1,0 +1,14 @@
+.onboarding2{
+    background-color: #00000090;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}

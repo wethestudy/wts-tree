@@ -1,12 +1,13 @@
 import React from 'react';
+import searchStyle from './search.module.css'
 
 export function Search() {
-  return <div id="search-wrapper">
-    <div id="results">
-      <p id="search-count"></p>
-      <div id="search-results"></div>
+  return <div className={searchStyle['search-wrapper']} id="search-wrapper">
+    <div className={searchStyle['results']} id="results">
+      <p className={searchStyle['search-count']} id="search-count"></p>
+      <div className={searchStyle['search-results']} id="search-results"></div>
     </div>
-    <div id="no-results">
+    <div className={searchStyle['no-results']} id="no-results">
       <p>No results found :/</p>
     </div>
   </div>;

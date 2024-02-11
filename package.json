@@ -5,6 +5,7 @@
   "dependencies": {
     "@memberstack/admin": "^1.2.4",
     "@memberstack/react": "^2.0.12",
+    "@react-pdf/renderer": "^3.1.15",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "airtable": "^0.12.1",
@@ -20,6 +21,7 @@
     "netlify-lambda": "^2.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-qr-code": "^2.0.12",
     "react-scripts": "^5.0.1",
     "serverless-http": "^3.2.0",
     "web-vitals": "^2.1.4"

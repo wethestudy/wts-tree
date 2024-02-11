@@ -15,6 +15,8 @@ export const parameters = {
         activeOpacity: 1,
         completedColor: 'teal',
         completedOpacity: 1,
+        masteredColor: '#B59D69',
+        masteredOpacity: 1,
     },
     pathProperties: {
         strokeWidth: 2,
@@ -22,6 +24,8 @@ export const parameters = {
         defaultOpacity: 0.5,
         completedColor: 'teal',
         completedOpacity: 1,
+        masteredColor: '#B59D69',
+        masteredOpacity: 1,
     },
     connectionProperties: {
         strokeWidth: 2,
