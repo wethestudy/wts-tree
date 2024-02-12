@@ -24,7 +24,6 @@ import tracksDatabase from './database/tree-tracks.js';
 import { Track } from './components/tree-ui/elements/ui-tracks/Tracks.js';
 import { CertificateModal } from './components/tree-ui/elements/ui-certificate/Certificate.js';
 import { MobileUI } from './components/tree-ui/mobile/MobileUI.js';
-import { url } from './links.js';
 
 function Tree() {
   // ===== STATE =====
@@ -87,7 +86,6 @@ function Tree() {
 
   // Handle dispatch event and state useEffect
   const handleEventFromWebflow = async (event) => {
-    if (event.srcElement.URL === url) {
       if (event.detail) {
         console.log('Received event from Webflow:', event.detail);
         let dispatchOptions = await event.detail;
@@ -97,7 +95,6 @@ function Tree() {
         setViewState(dispatchOptions.view)
         processTracks(dispatchOptions.member.data.masteredArticlesID)
       }
-    }
   };
   useEffect(() => {
     document.addEventListener('memberData', handleEventFromWebflow);

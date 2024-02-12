@@ -4,7 +4,7 @@ const intervalLocal100 = setInterval(()=>{
     document.addEventListener('memberData', function(event) {
         console.log('Event dispatched!');
         console.log('Event data:', event.detail);
-        clearInterval(intervalLocal1)
+        clearInterval(intervalLocal100)
     });
     let memberJson = {data:{
     "completedArticlesID": [
@@ -22,7 +22,7 @@ setTimeout(()=>{
 // New local development script as of V1.06
 // NOTE: Set local URL to true
 const intervalLocal106 = setInterval(()=>{
-    document.addEventListener('memberData', function(event) {clearInterval(intervalLocal)});
+    document.addEventListener('memberData', function(event) {clearInterval(intervalLocal106)});
     let customFields = {"certificate-name": "John Doe"}
     let memberJSON = {data: {"completedArticlesID": [], "masteredArticlesID": []}};
     let view = {type: "default", parameters: {object: null}};
@@ -39,7 +39,7 @@ const intervalWebflow100 = setInterval(()=>{
     document.addEventListener('memberData', function(event) {
         console.log('Event dispatched!');
         console.log('Event data:', event.detail);
-        clearInterval(intervalWebflow)
+        clearInterval(intervalWebflow100)
     });
     try{
         memberstack.getCurrentMember()
@@ -64,7 +64,7 @@ setTimeout(()=>{
 //V1.06 Dispatch Code
 // const memberstack = window.$memberstackDom;
 const intervalWebflow106 = setInterval(()=>{
-    document.addEventListener('memberData', function(event) {clearInterval(intervalWebflow)});
+    document.addEventListener('memberData', function(event) {clearInterval(intervalWebflow106)});
     let customFields = {"certificate-name": "John Doe",}
     let memberJSON = {data:{"completedArticlesID": [], "masteredArticlesID": []}};
     let view = {type: "default", parameters: {object: null}};
