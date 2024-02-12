@@ -20,7 +20,6 @@ setTimeout(()=>{
 }, 20000)
 
 // New local development script as of V1.06
-// NOTE: Set local URL to true
 const intervalLocal106 = setInterval(()=>{
     document.addEventListener('memberData', function(event) {clearInterval(intervalLocal106)});
     let customFields = {"certificate-name": "John Doe"}
