@@ -1,29 +1,30 @@
 import React from 'react';
 import * as d3 from "d3";
 import { useEffect, useRef, useState } from 'react';
-import RadialTree from './components/RadialTree.js';
-import Desktop from './components/Desktop.js'
-import Mobile from "./components/Mobile.js";
-import NavigationControls from './components/NavigationControls';
-import Loading from './components/alert/Loading.js';
-import PopupCard from './components/elements/PopupCard.js';
 import database from "./database/tree-json.js"
-import { DesktopUI } from "./components/ui/DesktopUI.js";
+import RadialTree from './components/tree/radial-tree/RadialTree.js';
+import Desktop from './components/tree-ui/desktop/Desktop.js'
+import Mobile from "./components/tree-ui/mobile/Mobile.js";
+import NavigationControls from './components/tree-ui/elements/ui-navigation-controls/NavigationControls.js';
+import Loading from './components/tree-ui/elements/ui-loading/Loading.js';
+import PopupCard from './components/tree-ui/elements/ui-popup-card/PopupCard.js';
+import { DesktopUI } from "./components/tree-ui/desktop/DesktopUI.js";
 import { stateUtilities } from "./components/utilities/stateUtilities.js";
 import { treeUtilities } from "./components/utilities/treeUtilities.js";
-import { RadialTreeUI } from "./components/ui/RadialTreeUI.js";
-import { Search } from "./components/Search.js";
-import { searchUtilities } from "./components/utilities/searchUtilities.js";
-import { MediaWarning } from "./components/alert/MediaWarning.js";
+import { RadialTreeUI } from "./components/tree/radial-tree/RadialTreeUI.js";
+import { Search } from "./components/tree-ui/elements/ui-search/Search.js";
+import { searchUtilities } from "./components/tree-ui/elements/ui-search/searchUtilities.js";
+import { MediaWarning } from "./components/tree-ui/elements/ui-media-warning/MediaWarning.js";
 import { showLoadingScreen } from "./devSettings.js";
-import { cameraUtilities } from './components/utilities/cameraUtilities.js';
+import { cameraUtilities } from './components/utilities/camera/cameraUtilities.js';
 import treeStyle from './tree.module.css'
-import { Onboarding } from './components/onboarding/Onboarding.js';
-import { OnboardingUI } from './components/ui/OnboardingUI.js';
+import { DesktopOnboarding } from './components/tree-ui/elements/ui-onboarding/DesktopOnboarding.js';
+import { OnboardingUI } from './components/tree-ui/elements/ui-onboarding/OnboardingUI.js';
 import tracksDatabase from './database/tree-tracks.js';
-import { Track } from './components/elements/Track.js';
-import { CertificateModal } from './components/Certificate.js';
-import { MobileUI } from './components/ui/MobileUI.js';
+import { Track } from './components/tree-ui/elements/ui-tracks/Tracks.js';
+import { CertificateModal } from './components/tree-ui/elements/ui-certificate/Certificate.js';
+import { MobileUI } from './components/tree-ui/mobile/MobileUI.js';
+import { url } from './links.js';
 
 function Tree() {
   // ===== STATE =====
@@ -44,7 +45,6 @@ function Tree() {
     view: view,
     customFields: customFields
   }
-  let [track, setTrack] = useState(null);
 
   // Define state functions
   const setRootState = () => {
@@ -87,14 +87,16 @@ function Tree() {
 
   // Handle dispatch event and state useEffect
   const handleEventFromWebflow = async (event) => {
-    if (event.detail) {
-      console.log('Received event from Webflow:', event.detail);
-      let dispatchOptions = await event.detail;
-      setSavedMemberState({...dispatchOptions.member})
-      setMemberState(dispatchOptions.member)
-      setCustomFieldsState(dispatchOptions.customFields)
-      setViewState(dispatchOptions.view)
-      processTracks(dispatchOptions.member.data.masteredArticlesID)
+    if (event.srcElement.URL === url) {
+      if (event.detail) {
+        console.log('Received event from Webflow:', event.detail);
+        let dispatchOptions = await event.detail;
+        setSavedMemberState({...dispatchOptions.member})
+        setMemberState(dispatchOptions.member)
+        setCustomFieldsState(dispatchOptions.customFields)
+        setViewState(dispatchOptions.view)
+        processTracks(dispatchOptions.member.data.masteredArticlesID)
+      }
     }
   };
   useEffect(() => {
@@ -122,7 +124,6 @@ let [selectedTrack, setSelectedTrack] = useState(tracksDatabase[0])
         width: `${numberOfMasteredNodes/requirementCount*100}%`,
       }
     })
-    setTrack(tracksDatabase)
   }
 
 // ===== WINDOW =====
@@ -462,7 +463,7 @@ let [selectedTrack, setSelectedTrack] = useState(tracksDatabase[0])
       {mobile ? null : <Track tracksDatabase={tracksDatabase} selectedTrack={selectedTrack}/>}
       {mobile ? null : <NavigationControls/>}
       {mediaWarningView()}
-      {<Onboarding setMemberState={setMemberState} />}
+      <DesktopOnboarding/>
       <CertificateModal treeState={treeState.customFields} track={selectedTrack}/>
     </div>
   }

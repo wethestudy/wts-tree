@@ -1,10 +1,10 @@
 // Insert between script tags
 // Local development script
-const intervalLocal = setInterval(()=>{
+const intervalLocal100 = setInterval(()=>{
     document.addEventListener('memberData', function(event) {
         console.log('Event dispatched!');
         console.log('Event data:', event.detail);
-        clearInterval(intervalLocal)
+        clearInterval(intervalLocal1)
     });
     let memberJson = {data:{
     "completedArticlesID": [
@@ -16,12 +16,26 @@ const intervalLocal = setInterval(()=>{
 }, 5000)
 
 setTimeout(()=>{
-    clearInterval(intervalLocal)
+    clearInterval(intervalLocal100)
+}, 20000)
+
+// New local development script as of V1.06
+// NOTE: Set local URL to true
+const intervalLocal106 = setInterval(()=>{
+    document.addEventListener('memberData', function(event) {clearInterval(intervalLocal)});
+    let customFields = {"certificate-name": "John Doe"}
+    let memberJSON = {data: {"completedArticlesID": [], "masteredArticlesID": []}};
+    let view = {type: "default", parameters: {object: null}};
+    let dispatchOptions = {member: memberJSON, customFields: customFields, view: view}
+    document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions}));
+}, 5000)
+setTimeout(()=>{
+    clearInterval(intervalLocal106)
 }, 20000)
 
 // Webflow script
-const memberstack = window.$memberstackDom;
-const intervalWebflow = setInterval(()=>{
+// const memberstack = window.$memberstackDom;
+const intervalWebflow100 = setInterval(()=>{
     document.addEventListener('memberData', function(event) {
         console.log('Event dispatched!');
         console.log('Event data:', event.detail);
@@ -43,7 +57,33 @@ const intervalWebflow = setInterval(()=>{
         document.dispatchEvent(new CustomEvent('memberData', { detail: memberJson}));
     }
 }, 5000)
-
 setTimeout(()=>{
-    clearInterval(intervalWebflow)
+    clearInterval(intervalWebflow100)
+}, 20000)
+
+//V1.06 Dispatch Code
+// const memberstack = window.$memberstackDom;
+const intervalWebflow106 = setInterval(()=>{
+    document.addEventListener('memberData', function(event) {clearInterval(intervalWebflow)});
+    let customFields = {"certificate-name": "John Doe",}
+    let memberJSON = {data:{"completedArticlesID": [], "masteredArticlesID": []}};
+    let view = {type: "default", parameters: {object: null}};
+    let dispatchOptions = {member: memberJSON, customFields: customFields, view: view}
+    try {
+        memberstack.getCurrentMember()
+            .then(async ({ data: member }) => {
+                if (member) {
+                    customFields = {"certificate-name": member.customFields["certificate-name"]}
+                    memberJSON = await memberstack.getMemberJSON();
+                    view = {type: "default", parameters: {object: null}};
+                    dispatchOptions = {member: memberJSON, customFields: customFields, view: view}   
+                }
+                document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions}));
+            })
+        } catch {
+            document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions}));
+        }
+}, 5000)
+setTimeout(()=>{
+    clearInterval(intervalWebflow106)
 }, 20000)
