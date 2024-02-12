@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from 'react';
 import GenericCard from "../../../ui/GenericCard.js";
 import onboarding1Style from "./styles/onboarding1.module.css"
 import onboarding2Style from "./styles/onboarding2.module.css"
