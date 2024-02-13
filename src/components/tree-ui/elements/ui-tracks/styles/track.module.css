@@ -69,7 +69,7 @@
   overflow: scroll;
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 1rem;
+  padding: 2rem;
   height: 20rem;
   visibility: hidden;
   width: 17rem;
@@ -85,7 +85,8 @@
   align-items: center;
   justify-content: center;
 }
-
-@media only screen and (max-width: 840px) {
-
+.index-button{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
 }

@@ -92,7 +92,7 @@ const Onboarding4 = () => {
 
 const Onboarding5 = () => {
     let title = "4 of 5: See Your Progress"
-    let text = <div>
+    let text = <div className={onboarding5Style['wrapper']}>
         <p>Completing or mastering nodes will fill nodes and branches of the tree. When no colored filters are applied:</p>
         <div className={onboarding5Style['node-wrapper']}>
         <div className={onboarding5Style['unexplored-node']}></div> Unexplored Node
@@ -112,7 +112,7 @@ const Onboarding5 = () => {
 
 const Onboarding6 = () => {
     let title = "5 of 5: Set a Goal"
-    let text = <div>
+    let text = <div className={onboarding6Style['wrapper']}>
         <p>Tracks are collections of nodes one must master. You can view a list of tracks on the bottom-right of the desktop screen.</p>
         <p>Every track is open to you. Select a specific track from the list and aim to master all the encircled nodes</p>
         <p>While mastering nodes, your mastery is carried over to other tracks</p>

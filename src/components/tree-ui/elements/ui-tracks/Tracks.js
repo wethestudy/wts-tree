@@ -1,13 +1,15 @@
 import React from 'react';
 import trackStyle from './styles/track.module.css'
+import { links } from '../../../../links';
 
 export function Track({tracksDatabase, selectedTrack}) {
   
   return <div className={trackStyle['track-wrapper']} id="track-wrapper">
     <TrackItem track={selectedTrack} id={"track-item-wrapper"} text={"Selected Track"}/>
     <div className={trackStyle['track-list-wrapper']} id="track-list-wrapper">
+      <a href={links["trackLink"]} className={trackStyle["index-button"]} target="_blank">Explore track index</a>
       {tracksDatabase.map((track, index)=>{
-        if(selectedTrack==track){
+        if(selectedTrack===track){
           return <TrackItem
             key={index}
             track={track}

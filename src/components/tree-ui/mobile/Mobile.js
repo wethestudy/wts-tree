@@ -10,6 +10,7 @@ import { MobileUI } from "./MobileUI.js";
 import mobileStyle from './styles/mobile.module.css'
 import { TrackItem } from "../elements/ui-tracks/Tracks.js";
 import trackStyle from "../elements/ui-tracks/styles/track.module.css"
+import { links } from "../../../links.js";
 
 const Mobile = ({tracksDatabase, selectedTrack}) => {
 
@@ -67,6 +68,7 @@ function MobileHeader({tracksDatabase, selectedTrack}){
           </div>
         </div>
         <div className={trackStyle['track-header']}>Tracks</div>
+        <a href={links["trackLink"]} className={trackStyle["index-button"]} target="_blank">Explore track index</a>
         {tracksDatabase.map((track, index)=>{
         if(selectedTrack===track){
           return <TrackItem

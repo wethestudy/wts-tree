@@ -9,6 +9,7 @@ const url = useLocalURL ? localURL : useDevelopmentURLs ? developmentURL : produ
 const links = {
     treeLink: `${url}/tree-posts`,
     indexLink: `${url}/tree/list-of-nodes`,
+    trackLink: `${url}/tree/list-of-tracks`,
     privacyLink: `${url}/legal/privacy-policy`,
     termsLink: `${url}/legal/terms-and-condition`,
     resourcesLink: `${url}/resource`,
