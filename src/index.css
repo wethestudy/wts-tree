@@ -44,4 +44,6 @@ a{
 }
 .fake-body{
   font-size: 0.9rem;
+  height: 100%;
+  width: 100%;
 }
