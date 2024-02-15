@@ -8,7 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   width: 100%;
-  font-size: 0.9rem;
 }
 input:where([type="checkbox"], [type="radio"]){
   -webkit-appearance : none;
@@ -42,4 +41,7 @@ label{
 }
 a{
   color: black;
+}
+.fake-body{
+  font-size: 0.9rem;
 }
