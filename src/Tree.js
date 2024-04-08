@@ -87,7 +87,6 @@ function Tree() {
   // Handle dispatch event and state useEffect
   const handleEventFromWebflow = async (event) => {
       if (event.detail) {
-        console.log('Received event from Webflow:', event.detail);
         let dispatchOptions = await event.detail;
         setSavedMemberState({...dispatchOptions.member})
         setMemberState(dispatchOptions.member)

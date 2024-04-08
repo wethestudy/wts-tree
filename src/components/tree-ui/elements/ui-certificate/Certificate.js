@@ -4,6 +4,9 @@ import { PDFViewer } from '@react-pdf/renderer';
 import certificateStyle from './styles/certificate.module.css'
 import headerImage from "../../../../assets/icons/WTS-Icons_WTS-Horizontal.png";
 import treeImage from "../../../../assets/icons/WTS-Icons_TreeOfKnowledge.png"
+import heebo600 from "../../../../assets/fonts/Heebo/Heebo-Medium.ttf";
+import heebo800 from "../../../../assets/fonts/Heebo/Heebo-ExtraBold.ttf";
+import heeboRegular from "../../../../assets/fonts/Heebo/Heebo-Regular.ttf";
 import GenericCard from '../../../ui/GenericCard';
 import { links, legalSlugs } from '../../../../links';
 
@@ -12,40 +15,16 @@ Font.register(
         family: "Heebo", 
         fonts: [
             {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EiS2cckOnz02SXQ.ttf",
-                fontWeight: 100
+                src: heeboRegular,
             },
             {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1ECSycckOnz02SXQ.ttf",
-                fontWeight: 200
-            },
-            {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1E1yycckOnz02SXQ.ttf",
-                fontWeight: 300,
-            },
-            {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EiSycckOnz02SXQ.ttf",
-            },
-            {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EuyycckOnz02SXQ.ttf",
-                fontWeight: 500
-            },
-            {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EVyucckOnz02SXQ.ttf",
+                src: heebo600,
                 fontWeight: 600
             },
             {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EbiucckOnz02SXQ.ttf",
-                fontWeight: 700
-            },
-            {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1ECSucckOnz02SXQ.ttf",
+                src: heebo800,
                 fontWeight: 800
             },
-            {
-                src: "http://fonts.gstatic.com/s/heebo/v22/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EICucckOnz02SXQ.ttf",
-                fontWeight: 900
-            }
         ]
     })
 

@@ -77,10 +77,15 @@ const intervalWebflow106 = setInterval(()=>{
                     view = {type: "default", parameters: {object: null}};
                     dispatchOptions = {member: memberJSON, customFields: customFields, view: view}   
                 }
-                document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions}));
+                if (window.location.origin === "https://wethestudy.webflow.io"){
+                    document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions}));
+                }
+                
             })
         } catch {
-            document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions}));
+            if (window.location.origin === "https://wethestudy.webflow.io"){
+                document.dispatchEvent(new CustomEvent('memberData', { detail: dispatchOptions})); 
+            }
         }
 }, 5000)
 setTimeout(()=>{
