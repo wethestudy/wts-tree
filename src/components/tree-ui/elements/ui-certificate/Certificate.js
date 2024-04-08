@@ -2,11 +2,11 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Font, Image, PDFDownloadLink, Link } from '@react-pdf/renderer';
 import { PDFViewer } from '@react-pdf/renderer';
 import certificateStyle from './styles/certificate.module.css'
-import headerImage from "../../../../assets/icons/WTS-Icons_WTS-Horizontal.png";
-import treeImage from "../../../../assets/icons/WTS-Icons_TreeOfKnowledge.png"
-import heebo600 from "../../../../assets/fonts/Heebo/Heebo-Medium.ttf";
-import heebo800 from "../../../../assets/fonts/Heebo/Heebo-ExtraBold.ttf";
-import heeboRegular from "../../../../assets/fonts/Heebo/Heebo-Regular.ttf";
+// import headerImage from "../../../../assets/icons/WTS-Icons_WTS-Horizontal.png";
+// import treeImage from "../../../../assets/icons/WTS-Icons_TreeOfKnowledge.png"
+// import heebo600 from "../../../../assets/fonts/Heebo/Heebo-Medium.ttf";
+// import heebo800 from "../../../../assets/fonts/Heebo/Heebo-ExtraBold.ttf";
+// import heeboRegular from "../../../../assets/fonts/Heebo/Heebo-Regular.ttf";
 import GenericCard from '../../../ui/GenericCard';
 import { links, legalSlugs } from '../../../../links';
 
@@ -15,14 +15,14 @@ Font.register(
         family: "Heebo", 
         fonts: [
             {
-                src: heeboRegular,
+                src: "https://raw.githubusercontent.com/wethestudy/wts-tree/v1.1.0/dist/9667d671d5a86bb83fdc.ttf",
             },
             {
-                src: heebo600,
+                src: "https://raw.githubusercontent.com/wethestudy/wts-tree/v1.1.0/dist/fa56b7e264b93408f82f.ttf",
                 fontWeight: 600
             },
             {
-                src: heebo800,
+                src: "https://raw.githubusercontent.com/wethestudy/wts-tree/v1.1.0/dist/bcca14fa0a57c8135c76.ttf",
                 fontWeight: 800
             },
         ]
@@ -174,8 +174,8 @@ const Certificate = ({name, track}) => {
             style={styles.page}
         >
             <View style={styles.headerBorder}></View>
-            <Image src={headerImage} style={styles.headerImage}/>
-            <Image src={treeImage} style={styles.treeImage}/>
+            <Image src={"https://raw.githubusercontent.com/wethestudy/wts-tree/v1.1.0/dist/9bac5b7c8c513d3f02bc.png"} style={styles.headerImage}/>
+            <Image src={"https://raw.githubusercontent.com/wethestudy/wts-tree/v1.1.0/dist/1192563fbf1f331da861.png"} style={styles.treeImage}/>
             <View style={styles.section}></View>
             <View>
                 <Text style={styles.title}>Certificate of Completion</Text>
