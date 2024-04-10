@@ -16,7 +16,7 @@ const links = {
     termsLink: `${url}/legal/terms-and-condition`,
     resourcesLink: `${url}/resource`,
     copyrightYear: `2024`,
-    appVersion: `1.1.1`,
+    appVersion: `1.1.2`,
     contactLink: `${url}/resources/contact`,
 }
 const resourceSlugs = ['how-to-use-the-tree-of-knowledge', 'tree-anatomy-and-user-interface', 'general-steps-in-using-the-tree', 'all-about-mastery', 'tree-evolution']
